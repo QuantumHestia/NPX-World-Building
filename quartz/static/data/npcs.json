@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Rhaelle Hollen",
+    "slug": "/npcs/rhaelle-hollen",
+    "portrait": "/static/portraits/rhaelle.jpg",
+    "faction_id": "gilded-fleet",
+    "affiliation": "The Gilded Fleet"
+  },
+  {
+    "name": "Captain Valerius",
+    "slug": "/npcs/valerius",
+    "portrait": "/static/portraits/valerius.jpg",
+    "faction_id": "azure-guard",
+    "affiliation": "The Azure Guard"
+  }
+]

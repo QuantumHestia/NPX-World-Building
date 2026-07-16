@@ -1,0 +1,102 @@
+/* ELDORIA STABLE LAYOUT */
+html, body {
+  margin: 0; padding: 0;
+  background-color: #0b0b0c !important;
+}
+
+body {
+  background-color: transparent !important;
+  min-height: 100vh !important;
+  display: flex; flex-direction: column;
+}
+
+/* FIXED BACKGROUND ART */
+body::before {
+  content: ""; 
+  position: fixed; top: 0; left: 0; 
+  width: 100vw; height: 100vh; 
+  z-index: -1;
+  background-image: url("/static/theme/bg.webp") !important;
+  background-size: cover !important; 
+  background-position: center center !important;
+  background-repeat: no-repeat !important; 
+  pointer-events: none; 
+}
+
+#quartz-body {
+  display: grid !important;
+  grid-template-columns: 300px minmax(0, 1250px) !important;
+  grid-template-areas: "menu content" !important;
+  max-width: calc(300px + 2rem + 1250px) !important;
+  margin: 2rem auto !important; 
+  gap: 2rem !important;
+  justify-content: center !important;
+
+  /* THE CRITICAL FIX: Stops parchment from stretching to match sidebar height */
+  align-items: start !important; 
+}
+
+.center > article {
+  position: relative !important; 
+  width: 100% !important; 
+  padding: 3rem 2.5rem !important;
+  background-color: var(--ay-paper) !important; 
+  color: var(--ay-text) !important;
+  box-shadow: 0 0 0 1px rgba(60, 50, 40, 0.1), 0 20px 60px rgba(0,0,0,0.8) !important;
+  border-radius: 4px;
+  overflow: visible; 
+  margin-bottom: 4rem !important; 
+}
+
+/* VERITAS STAMP */
+article::after {
+  content: "THE THIRD RECORD - VERITAS";
+  position: absolute; bottom: 25px; right: 35px;
+  font-family: 'IM Fell English', serif; font-size: 0.75rem;
+  color: rgba(139, 69, 19, 0.25); text-transform: uppercase;
+  letter-spacing: 2.5px; border: 1px solid rgba(139, 69, 19, 0.25);
+  padding: 5px 12px; transform: rotate(-12deg); 
+  pointer-events: none; white-space: nowrap; z-index: 10;
+}
+
+/* =========================
+   THE CENTRAL PAW STAMP (Authentic Ink)
+   ========================= */
+
+body[data-slug*="Morgana"] article::before {
+  content: "" !important; 
+  position: absolute;
+  
+  /* Centered placement on the parchment */
+  top: 52%;
+  left: 48%; 
+  transform: translate(-50%, -50%) rotate(-24deg);
+  
+  /* Dimensions for a natural-sized print */
+  width: 180px; 
+  height: 180px;
+  
+  /* THE FIX: More detailed, asymmetrical feline print SVG */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="black"><path d="M25,35 c-5,0 -8,4 -8,9 c0,6 4,10 9,10 c4,0 7,-4 7,-9 c0,-5 -3,-10 -8,-10 z M42,22 c-4,0 -7,4 -7,8 c0,6 4,9 7,9 c4,0 7,-4 7,-9 c0,-4 -3,-8 -7,-8 z M63,22 c-4,0 -7,4 -7,8 c0,6 3,9 7,9 c4,0 7,-4 7,-9 c0,-4 -3,-8 -7,-8 z M79,35 c-5,0 -8,4 -8,9 c0,6 4,10 9,10 c4,0 7,-4 7,-9 c0,-5 -3,-10 -8,-10 z M52,48 c-10,0 -18,8 -18,18 c0,10 8,16 18,16 c10,0 18,-6 18,-16 c0,-10 -8,-18 -18,-18 z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  /* AUTHENTICITY: Heavy ink density and natural bleed */
+  opacity: 0.72;
+  
+  /* Simulates the uneven absorption of ink on fiber */
+  filter: 
+    contrast(1.5) 
+    brightness(0.8) 
+    blur(0.4px) 
+    drop-shadow(0.5px 0.5px 1px rgba(0,0,0,0.2)) !important;
+
+  pointer-events: none;
+  z-index: 0; /* Sits behind text so the "archives" are still readable */
+}
+
+/* Contain floated marginalia so the parchment extends to include it */
+.center > article {
+  display: flow-root; /* creates a new block formatting context; contains floats */
+}

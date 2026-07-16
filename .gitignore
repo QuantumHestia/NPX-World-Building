@@ -1,0 +1,15 @@
+# Node dependencies — restored with npm ci
+node_modules/
+
+# Quartz generated website output
+public/
+
+# Environment variables and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# OS metadata
+.DS_Store

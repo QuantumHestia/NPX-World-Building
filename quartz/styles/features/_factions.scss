@@ -1,0 +1,263 @@
+/* =========================
+   FACTION DIRECTORY CARDS
+   ========================= */
+
+.character-grid .callout {
+  display: block !important; /* Switch from flex to block to stop squishing */
+  padding: 1.5rem !important;
+  text-align: center;
+  border: 1px solid rgba(93, 76, 58, 0.4) !important;
+  background: rgba(214, 203, 183, 0.75) !important;
+  border-radius: 4px !important;
+  transition: all 0.25s ease !important;
+}
+
+/* THE WAX SEAL (Emblem) */
+.faction-emblem {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 1rem auto !important; /* Added 1rem bottom margin to clear space */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  background: #a33e3e;
+  border-radius: 50% !important;
+  box-shadow: inset 0 0 8px rgba(0,0,0,0.4), 0 3px 6px rgba(0,0,0,0.3);
+  pointer-events: none;
+}
+
+/* THE FACTION NAME */
+.character-grid .callout .callout-title {
+  display: block !important;
+  margin: 0 0 0.75rem 0 !important; /* Pushes the 'Base/Influence' line down */
+  padding: 0 !important;
+  border-bottom: none !important;
+}
+
+.character-grid .callout .callout-title-inner a {
+  font-family: var(--headerFont);
+  font-size: 1.25rem !important;
+  color: #1a1512 !important;
+  text-decoration: none !important;
+}
+
+/* THE DETAILS (Base & Influence) */
+.character-grid .callout .callout-content {
+  padding: 0 !important;
+  display: block !important;
+}
+
+.character-grid .callout .callout-content p {
+  margin: 0 !important;
+  font-size: 0.85rem !important;
+  color: #5d4c3a !important;
+  line-height: 1.5 !important; /* Adds breathing room between lines */
+}
+
+.character-grid .callout .callout-content strong {
+  color: #8b4513 !important;
+}
+
+/* REGIONAL THEMES */
+.callout[data-callout="faction-maritime"] {
+  background: linear-gradient(135deg, rgba(26, 74, 110, 0.15) 0%, rgba(214, 203, 183, 0.6) 100%) !important;
+  border-color: rgba(26, 74, 110, 0.3) !important;
+}
+
+.callout[data-callout="faction-maritime"]:hover {
+  border-color: #1a4a6e !important;
+  background: linear-gradient(135deg, rgba(26, 74, 110, 0.25) 0%, rgba(214, 203, 183, 0.85) 100%) !important;
+}
+
+/* Make entire card clickable via JavaScript */
+.character-grid .callout[data-faction-link] {
+  cursor: pointer !important;
+}
+
+/* Target images inside the faction emblem seal */
+.faction-emblem img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important; /* Ensures the whole crest is visible */
+  border-radius: 50% !important;
+  padding: 5px; /* Adds a small gap between the crest and the seal edge */
+  display: block !important;
+  margin: 0 !important;
+}
+
+/* Optional: If using high-contrast crests, remove the background color */
+.faction-emblem {
+  background: #a33e3e; /* Keep for the 'Wax Seal' look */
+  overflow: hidden; /* Ensures the image stays in the circle */
+}
+
+/* Ensure internal Quartz images fit the faction seal */
+.faction-emblem span, 
+.faction-emblem img {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  border-radius: 50% !important;
+  margin: 0 !important;
+}
+
+.faction-emblem {
+  overflow: hidden !important; /* Clips the internal image to the wax seal circle */
+}
+
+/* Ensure images fill the Wax Seal completely */
+.faction-emblem img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important; /* Forces the crest to fill the circle */
+  border-radius: 50% !important;
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important; /* Remove padding to fill the whole red circle */
+}
+
+.faction-emblem {
+  overflow: hidden !important; /* Clips the square image into the circle */
+  background: #a33e3e; /* The wax color serves as the 'border' background */
+}
+
+/* Remove the (i) icon from all callouts inside Persons of Interest */
+.callout .callout-icon {
+    display: none !important;
+}
+
+/* Ensure the title text aligns properly without the icon */
+.callout-title {
+    padding-left: 0.5rem !important;
+}
+
+/* Custom class for larger header emblems */
+.header-emblem {
+    height: 45px !important; /* Increase this number to make it even larger */
+    width: auto !important;
+    vertical-align: middle !important;
+    margin-right: 12px !important;
+    border-radius: 4px; /* Optional: adds slightly rounded corners to the emblem */
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3)); /* Optional: makes it pop against the header */
+}
+
+.character-grid .callout.is-clickable {
+  cursor: pointer;
+}
+
+.faction-tabbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(93, 76, 58, 0.35);
+}
+
+.faction-tab {
+  font-family: var(--headerFont);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: rgba(214, 203, 183, 0.45);
+  border: 1px solid rgba(93, 76, 58, 0.35);
+  border-radius: 4px;
+  padding: 0.45rem 0.75rem;
+  cursor: pointer;
+}
+
+.faction-tab.is-active {
+  background: rgba(93, 76, 58, 0.12);
+  border-color: rgba(93, 76, 58, 0.55);
+}
+
+[data-faction-dossier] .faction-panel { display: none; }
+[data-faction-dossier] .faction-panel.is-active { display: block; }
+
+.faction-relgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.faction-relcard {
+  display: block;
+  padding: 0.85rem 0.9rem;
+  border: 1px solid rgba(93, 76, 58, 0.35);
+  background: rgba(214, 203, 183, 0.45);
+  border-radius: 6px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.faction-relname {
+  font-family: var(--headerFont);
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.faction-relnote {
+  font-size: 0.9rem;
+  color: rgba(61, 53, 48, 0.9);
+}
+
+/* Card-only theming on the hub page */
+.character-grid .callout[data-callout="pantheon-jade"] {
+  background: linear-gradient(135deg, rgba(16, 92, 70, 0.18) 0%, rgba(214, 203, 183, 0.60) 100%) !important;
+  border-color: rgba(16, 92, 70, 0.30) !important;
+}
+
+.character-grid .callout[data-callout="pantheon-aegis"] {
+  background: linear-gradient(135deg, rgba(120, 92, 20, 0.18) 0%, rgba(214, 203, 183, 0.60) 100%) !important;
+  border-color: rgba(120, 92, 20, 0.30) !important;
+}
+
+.character-grid .callout[data-callout="pantheon-jade"] .faction-emblem {
+  background: rgba(16, 92, 70, 0.85) !important;
+}
+
+.character-grid .callout[data-callout="pantheon-aegis"] .faction-emblem {
+  background: rgba(120, 92, 20, 0.85) !important;
+}
+
+.court-members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.court-member {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid rgba(93, 76, 58, 0.35);
+  background: rgba(214, 203, 183, 0.35);
+  border-radius: 8px;
+  padding: 0.6rem;
+}
+
+.court-member img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.court-member-name {
+  font-family: var(--headerFont);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.court-member-role {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}

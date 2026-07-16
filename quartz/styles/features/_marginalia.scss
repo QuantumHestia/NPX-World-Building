@@ -1,0 +1,179 @@
+/* 1) Shared base: force ALL inner wrappers to allow overflow */
+.callout[data-callout="archivist-note-right"],
+.callout[data-callout="archivist-note-left"] {
+  width: 270px !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+
+  /* give a bit more safe paint room */
+  padding: 0.75rem 0.9rem !important;
+
+  /* critical: outer + inner wrappers */
+  overflow: visible !important;
+  position: relative !important;
+
+  .callout-content {
+    overflow: visible !important;
+    position: relative !important;
+    /* This ensures single line breaks from Markdown are rendered */
+    white-space: pre-line !important; 
+  }
+
+  .callout-content p,
+  .callout-content span {
+    overflow: visible !important;
+  }
+
+  & > .callout-title { display: none !important; }
+}
+
+/* 2) RIGHT note: REMOVE the negative right margin (this is a clipping generator) */
+.callout[data-callout="archivist-note-right"] {
+  float: right;
+  clear: right;
+
+  margin-left: 2rem !important;
+  margin-right: 0 !important;          /* <-- was -1rem; remove it */
+  margin-bottom: 1.75rem !important;
+  border-left: 1.5px solid rgba(122, 31, 31, 0.3) !important;
+  text-align: left;
+}
+
+/* 3) LEFT note: keep it inside the box; no negative margins */
+.callout[data-callout="archivist-note-left"] {
+  float: left;
+  clear: left;
+
+  margin-right: 2rem !important;
+  margin-left: 0 !important;           /* keep inside safe paint area */
+  margin-bottom: 1.65rem !important;
+
+  transform-origin: right center;
+  border-right: 1.5px solid rgba(122, 31, 31, 0.3) !important;
+  text-align: left;
+}
+
+/* INK STYLE (shared) */
+.callout[data-callout="archivist-note-left"],
+.callout[data-callout="archivist-note-right"] {
+  /* Ink color */
+  --ink: #7a1f1f;
+  --ink-soft: rgba(122, 31, 31, 0.35);
+  --ink-halo: rgba(122, 31, 31, 0.18);
+
+  .callout-content,
+  .callout-content p,
+  .callout-content span {
+    color: var(--ink) !important;
+
+    /* Cursive/handwritten font */
+    font-family: "Caveat", cursive !important;
+    font-weight: 600 !important;
+
+    /* A touch of “handwriting” spacing */
+    letter-spacing: 0.31415px;
+    line-height: 1.15 !important;
+  }
+
+  /* Ink bleed effect: layered shadows */
+  .callout-content p,
+  .callout-content span {
+    text-shadow:
+      /* crisp-ish edge */
+      0.3px 0.3px 0.6px var(--ink-soft),
+      /* soft halo */
+      0 0 2.4px var(--ink-halo),
+      /* deeper bleed */
+      -0.6px 0.6px 4.8px rgba(122, 31, 31, 0.12),
+      /* very soft far glow */
+      0 0 10px rgba(122, 31, 31, 0.08) !important;
+  }
+
+  /* Make the vertical border match the ink */
+  border-left-color: rgba(122, 31, 31, 0.30) !important;
+  border-right-color: rgba(122, 31, 31, 0.30) !important;
+}
+
+/* Add this inside your marginalia styling block */
+.callout[data-callout="archivist-note-left"],
+.callout[data-callout="archivist-note-right"] {
+  
+  a.internal, a.external {
+    color: inherit !important;
+    text-decoration: underline wavy var(--ink-soft) !important;
+    display: inline !important; /* Prevents links from breaking into block elements */
+    overflow: visible !important;
+  }
+}
+
+/* Force line breaks in marginalia */
+.callout[data-callout="archivist-note-left"],
+.callout[data-callout="archivist-note-right"] {
+  
+  .callout-content p {
+    /* Split text into multiple lines using CSS */
+    display: block !important;
+    
+    /* If Quartz wraps everything in one <p>, we can't use CSS alone to break it */
+    /* Instead, use <br> tags in your markdown */
+  }
+  
+  /* Ensure <br> tags are rendered */
+  .callout-content br {
+    display: block !important;
+    content: "" !important;
+    margin: 0 !important;
+    line-height: 1.15 !important;
+  }
+}
+
+.callout[data-callout="archivist-note-right"],
+.callout[data-callout="archivist-note-left"] {
+  // Prevent the whole marginalia block from exceeding viewport width
+  width: min(270px, calc(100vw - 2rem)) !important;
+  box-sizing: border-box;
+
+  .callout-content {
+    position: relative !important;
+    max-width: 100% !important;
+  }
+
+  // Force wrapping for *anything* inside the callout (defensive)
+  .callout-content * {
+    max-width: 100% !important;
+    box-sizing: border-box;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    white-space: normal;
+    hyphens: auto;
+  }
+
+  // If your quote is a <blockquote>, this targets it directly
+  .callout-content blockquote {
+    margin: 0.6rem 0 0 !important;
+  }
+
+  // If your quote is a <p> (common in Quartz), ensure it can wrap
+  .callout-content p {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    white-space: normal;
+  }
+}
+
+@media (max-width: 900px), (max-height: 700px) {
+  .callout[data-callout="archivist-note-right"],
+  .callout[data-callout="archivist-note-left"] {
+    float: none !important;
+    width: 100% !important;
+    margin: 1rem 0 !important;
+
+    // If you absolutely-position the quote, disable that on small screens
+    .archivist-quote,
+    .callout-content > p:last-child {
+      position: static !important;
+      transform: none !important;
+    }
+  }
+}

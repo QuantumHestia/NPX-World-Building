@@ -1,0 +1,10 @@
+{
+  "local-gpt:context-menu": [
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": "I"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+/* =========================
+   REDACTIONS (The Archive Blackout)
+   ========================= */
+.redacted {
+  background: rgba(0, 0, 0, .85);
+  color: transparent !important;
+  border-radius: 6px;
+  padding: 0 6px;
+  transition: all 0.3s ease;
+  cursor: help;
+  
+  &:hover {
+    background: transparent;
+    color: inherit !important;
+  }
+}
+
+/* =========================
+   NPC DOSSIER STAMPS & BADGES
+   ========================= */
+.npc-stamp {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  border: 1px solid rgba(0,0,0,.15);
+  background: rgba(255,255,255,.25);
+  backdrop-filter: blur(6px);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.npc-stamps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 1rem 0 !important;
+}
+
+.npc-stamp {
+  padding: 6px 14px !important;
+  border: 1px solid rgba(93, 76, 58, 0.5) !important;
+  background: rgba(93, 76, 58, 0.05) !important;
+  color: #5d4c3a !important;
+  font-size: 0.8rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  border-radius: 2px !important; /* Boxy stamp look */
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+/* =========================
+   REGIONAL GROUPING
+   ========================= */
+/* Specific styling for the Summer Isles regional callout */
+.callout[data-callout="info"] {
+  &[data-callout-metadata*="Summer Isles"] {
+    border-color: #b89a6d !important;
+    background: rgba(214, 203, 183, 0.4) !important;
+  }
+}
+
+.directory-nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(93, 76, 58, 0.3);
+}
+
+.directory-nav a {
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #5d4c3a;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #8b4513;
+  transition: all 0.2s ease;
+}
+
+.directory-nav a:hover {
+  background: #5d4c3a;
+  color: #d6cbb7;
+}
+
+/* Container to force labels and badges into a clean horizontal line */
+/* The Main Container */
+.status-row {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  gap: 15px !important;
+  margin: 1.5rem 0 0.5rem 0 !important;
+  width: 100%;
+}
+
+/* Individual Status/Badge Pair */
+.status-group {
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
+
+/* Force the Label text through CSS instead of Markdown */
+.status-label {
+  font-weight: 700 !important;
+  font-size: 0.85rem !important;
+  color: #5d4c3a !important;
+  text-transform: capitalize;
+}
+
+/* Ensure badges don't wrap internally */
+.badge {
+  white-space: nowrap !important;
+  font-size: 0.75rem !important;
+  padding: 2px 8px !important;
+}
+
+/* Ensure the labels and badges sit on the same line */
+.status-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.85rem;
+}

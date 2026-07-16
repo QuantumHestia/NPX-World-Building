@@ -1,0 +1,107 @@
+/* =========================================
+   WORLD ANVIL MENU
+   ========================================= */
+
+.sidebar.left {
+  grid-area: menu !important;
+  position: sticky !important;
+  top: 2rem !important;
+  align-self: start !important;
+  
+  /* CRITICAL HEIGHT FIX: This prevents the 'infinitely long' menu box */
+  height: fit-content !important;
+  max-height: calc(100vh - 4rem) !important;
+  width: 200px !important;
+  overflow-y: auto; /* Adds a scrollbar ONLY if your menu gets too long */
+
+  background-color: rgba(30, 25, 20, 0.98) !important; 
+  border: 2px solid #5d4c3a !important;
+  padding: 1.25rem !important; /* Slightly tighter padding */
+  border-radius: 4px !important;
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.8) !important;
+  z-index: 100 !important;
+
+  /* Scrollbar styling for long menus */
+  &::-webkit-scrollbar { width: 4px; }
+  &::-webkit-scrollbar-thumb { background: #5d4c3a; border-radius: 2px; }
+}
+
+.world-anvil-menu {
+  & h2 {
+    color: #d4a857 !important; 
+    font-family: var(--headerFont) !important;
+    font-size: 1.3rem !important; /* Slightly smaller header */
+    text-align: center !important;
+    margin-bottom: 1.2rem !important;
+    border-bottom: 1px solid #5d4c3a !important;
+    padding-bottom: 0.5rem;
+  }
+
+  & ul {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  & li {
+    margin-bottom: 0.6rem !important; /* Tighter list spacing */
+  }
+
+  /* Section headers (Basics, Notable Figures) */
+  & .section-title {
+    color: #b89a6d !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    font-size: 0.8rem !important;
+    margin: 1.2rem 0 0.4rem 0 !important;
+    padding-left: 0.5rem;
+  }
+
+  & a {
+    color: #f1ede4 !important; 
+    text-decoration: none !important;
+    display: block !important;
+    padding: 0.5rem 0.8rem !important;
+    background-color: rgba(93, 76, 58, 0.25) !important;
+    border-radius: 3px !important;
+    font-size: 0.9rem !important; /* Slightly smaller links for a cleaner look */
+    transition: all 0.2s ease !important;
+
+    &:hover {
+      background-color: rgba(212, 168, 87, 0.25) !important;
+      color: #ffffff !important;
+      transform: translateX(4px);
+    }
+  }
+}
+
+/* =========================================
+   SPECIAL BUTTON CENTERING
+   ========================================= */
+
+/* Center the 'Home' button container */
+.world-anvil-menu .home-button {
+  text-align: center !important;
+  margin: 0 0 1rem 0 !important;
+  padding: 0 !important; /* Removes inherited list padding */
+  border-bottom: 1px solid rgba(93, 76, 58, 0.3) !important;
+  padding-bottom: 1rem !important;
+}
+
+/* Center the 'Play Game' button container */
+.world-anvil-menu .game-button {
+  text-align: center !important;
+  margin: 1.5rem 0 0 0 !important;
+  padding: 0 !important;
+  border-top: 1px solid rgba(93, 76, 58, 0.3) !important;
+  padding-top: 1rem !important;
+}
+
+/* Ensure the links inside behave as centered blocks */
+.home-button a, 
+.game-button a {
+  display: inline-block !important; /* Key for centering within text-align: center */
+  width: 80% !important; /* Makes them look consistent and intentional */
+  margin: 0 auto !important;
+  text-align: center !important;
+}

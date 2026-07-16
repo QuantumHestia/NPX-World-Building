@@ -1,0 +1,330 @@
+/* =========================
+   CHARACTER PORTRAITS
+   ========================= */
+
+/* Targeted selector to ensure images stay 120px regardless of grid nesting */
+.callout[data-callout="abstract"] img,
+.callout[data-callout="abstract"] span img,
+.character-grid img {
+  width: 120px !important;
+  height: 120px !important;
+  max-width: 120px !important;
+  margin: 0 auto 1rem auto !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  border: 3px solid #5d4c3a !important;
+  display: block !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3) !important;
+}
+
+.character-grid .callout img {
+  /* Dimensions & Shape */
+  width: 120px !important;
+  height: 120px !important;
+  margin: 0 auto 1rem auto !important;
+  border-radius: 50% !important; /* Makes the image a circle */
+  
+  /* Image Handling */
+  object-fit: cover !important; /* Prevents stretching */
+  border: 3px solid #5d4c3a !important; /* Matches your UI border color */
+  
+  /* Archive Aesthetic */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3) !important;
+  filter: sepia(20%) contrast(1.1) !important; 
+  transition: all 0.3s ease !important;
+}
+
+/* Hover effect for portraits */
+.character-grid .callout:hover img {
+  transform: scale(1.05);
+  border-color: #b89a6d !important; /* Gold highlight on hover */
+  filter: sepia(0%) contrast(1) !important; /* Reveal true colors */
+}
+
+/* Fallback if no image is present */
+.character-grid .callout p:contains("Portrait") {
+  text-align: center;
+  font-style: italic;
+  opacity: 0.5;
+  padding: 2rem 0;
+}
+
+/* =========================
+   INTERACTIVE NPC CARDS
+   ========================= */
+
+.character-grid .callout {
+  /* Transition for a smooth "pop" effect */
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  cursor: pointer;
+  border: 1px solid rgba(93, 76, 58, 0.3) !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.character-grid .callout:hover {
+  /* Lift the card and add a shadow */
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5) !important;
+  border-color: #b89a6d !important; /* Gold highlight from your config */
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Add a subtle "Archive Stamp" glow on hover */
+.character-grid .callout::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at top right, rgba(184, 154, 109, 0.1), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.character-grid .callout:hover::after {
+  opacity: 1;
+}
+
+/* Remove the blue clipboard icon from NPC cards */
+.character-grid .callout[data-callout="abstract"] .callout-icon {
+  display: none !important;
+}
+
+/* Center the title text since the icon is gone */
+.character-grid .callout[data-callout="abstract"] .callout-title {
+  justify-content: center !important;
+}
+
+.character-grid .callout[data-callout="abstract"] .callout-title-inner {
+  margin-left: 0 !important;
+  text-align: center;
+  width: 100%;
+}
+
+/* =========================
+   POPOVER / PREVIEW STYLING
+   ========================= */
+
+.popover {
+  background-color: #d6cbb7 !important; /* Match your 'ay-paper' color */
+  border: 2px solid #5d4c3a !important; /* Match your menu border */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5) !important;
+  border-radius: 6px !important;
+  padding: 1rem !important;
+  max-width: 400px !important;
+}
+
+/* Hide unwanted elements in the popover preview */
+.popover .page-header, 
+.popover .backlinks, 
+.popover footer {
+  display: none !important;
+}
+
+.popover h1 {
+  font-size: 1.4rem !important;
+  margin-top: 0 !important;
+  color: #1a1512 !important;
+  border-bottom: 1px solid #5d4c3a !important;
+}
+
+/* Indicator that the card is a link */
+.character-grid .callout::before {
+  content: "Open Dossier";
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #8b4513; /* Your secondary accent color */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.character-grid .callout:hover::before {
+  opacity: 0.7;
+}
+
+/* =========================
+   NPC CARD: FULL AREA CLICK
+   ========================= */
+
+.character-grid .callout {
+  position: relative !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  padding-top: 1.5rem !important;
+  z-index: 1;
+
+  /* 1. Reset the link so it doesn't cover the portrait */
+  .callout-title a {
+    position: relative !important; /* Changed from absolute */
+    display: inline-block !important;
+    width: auto !important;
+    height: auto !important;
+    z-index: 20 !important; /* Keep text on top */
+    color: var(--secondary) !important; 
+    text-decoration: none !important;
+    pointer-events: auto !important;
+
+    /* 2. This creates the 'Invisible Layer' that covers the whole card */
+    &::before {
+      content: "" !important;
+      position: absolute !important;
+      top: -1.5rem !important; /* Reach up to the very top of the card */
+      left: -50vw !important; /* Massive horizontal reach */
+      right: -50vw !important;
+      height: 500px !important; /* Massive vertical reach */
+      z-index: 10 !important;
+      cursor: pointer !important;
+    }
+  }
+}
+
+/* 3. Ensure the portrait and text don't block the click through to the link */
+.character-grid .callout-title-text,
+.character-grid .callout-content,
+.character-grid .status-row,
+.character-grid img {
+  pointer-events: none !important;
+  position: relative !important;
+}
+
+/* 4. Keep the title container stable */
+.character-grid .callout-title {
+  margin-bottom: 1.2rem !important;
+  width: 100% !important;
+  text-align: center !important;
+}
+
+/* =========================
+   CHARACTER GRID LAYOUT
+   ========================= */
+.character-grid {
+  display: grid !important;
+  /* Creates 3 equal columns */
+  grid-template-columns: repeat(3, 1fr) !important; 
+  gap: 1.5rem !important;
+  margin: 2rem 0 !important;
+  width: 100% !important;
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 768px) {
+  .character-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+  }
+}
+
+/* =========================
+   NPC DOSSIER PAGE STYLING
+   ========================= */
+
+/* The Main Container */
+
+[data-npc-dossier] {
+  padding: 2rem !important;
+  background: var(--ay-paper);
+  border: 1px solid rgba(93, 76, 58, 0.4);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+  margin-top: 2rem;
+}
+
+/* Fix the Header Layout */
+.npc-header {
+  display: grid !important;
+  grid-template-columns: 200px 1fr !important; /* Fixed width for portrait area */
+  gap: 2.5rem !important;
+  align-items: start !important;
+  border-bottom: 2px solid #5d4c3a;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Targeted Portrait Fix: Handles Quartz Markdown Images */
+.npc-header img, 
+.npc-portrait {
+  width: 200px !important;
+  height: 280px !important;
+  border-radius: 4px !important;
+  object-fit: cover !important;
+  border: 6px solid #fff !important; /* White photo border */
+  box-shadow: 3px 5px 15px rgba(0,0,0,0.4) !important;
+  transform: rotate(-1.5deg); /* Professional archival 'taped' look */
+  margin: 0 !important;
+}
+
+/* Header Text Cleanup */
+.npc-header h2 {
+  margin-top: 0 !important;
+  color: #1a1512 !important;
+  font-family: var(--headerFont);
+  letter-spacing: 0.5px;
+}
+
+.npc-portrait {
+  width: 180px !important;
+  height: 240px !important;
+  border-radius: 4px !important; /* Rectangular looks more like a physical photo */
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 2px 4px 10px rgba(0,0,0,0.3);
+  transform: rotate(-2deg); /* Subtle 'taped on' tilt */
+}
+
+/* Tab Bar Styling */
+.npc-tabbar {
+  display: flex;
+  gap: 4px;
+  border-bottom: 1px solid #5d4c3a;
+  margin-bottom: 1.5rem;
+}
+
+.npc-tab {
+  background: rgba(93, 76, 58, 0.1) !important;
+  border: 1px solid #5d4c3a !important;
+  border-bottom: none !important;
+  padding: 8px 16px !important;
+  color: #5d4c3a !important;
+  font-family: var(--headerFont);
+  font-size: 0.9rem !important;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.npc-tab.is-active {
+  background: #5d4c3a !important;
+  color: #d6cbb7 !important;
+}
+
+/* Relationship Grid */
+.npc-relgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.npc-relcard {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(93, 76, 58, 0.2);
+  text-decoration: none !important;
+  transition: transform 0.2s ease;
+}
+
+.npc-relcard:hover { transform: translateY(-3px); }
+
+.npc-relname { font-weight: 700; color: #8b4513; margin-bottom: 0.2rem; }
+.npc-relnote { font-size: 0.8rem; font-style: italic; color: #5d4c3a; }
+
+/* Favor the top of the portrait so faces don’t get cropped */
+.character-grid .callout img,
+.callout[data-callout="abstract"] img {
+  object-position: 50% 18% !important; /* x% y%  — tweak y (10–30%) */
+}

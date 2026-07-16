@@ -1,0 +1,423 @@
+@use "./base.scss";
+@use "./features/ui-elements"; // Load utilities first
+@use "./features/layout";    // Load layouts
+@use "./features/menu";    // Load menu
+@use "./features/quotes";    // Load quotes
+@use "./features/npcs";        // Load character cards
+@use "./features/factions";    // Load group identity
+@use "./features/maps";        // Load map overrides
+@use "./features/timeline";    // Load timeline overrides
+@use "./features/marginalia";    // Load marginalia
+
+
+/* =========================
+   ELDORIA: GLOBAL VARIABLES
+   ========================= */
+:root {
+  --ay-text: #2b241d;
+  --ay-paper: #d6cbb7;
+  --eld-width: 820px;
+
+  /* Force transparency */
+  --light: transparent !important;
+  --bodyFont: "Caudex", serif;
+  --headerFont: "Caudex", serif;
+}
+
+/* =========================
+   3. MAIN LAYOUT
+   ========================= */
+
+/* Reset layout containers */
+.page {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+/* Hide unnecessary elements */
+.sidebar.right,
+.page-header,
+header {
+  display: none !important;
+}
+
+/* =========================
+   4. FLEX GRID LAYOUT
+   ========================= */
+
+#quartz-body {
+  display: grid !important;
+  grid-template-columns: 300px minmax(0, 1250px) !important;
+  grid-template-areas: "menu content" !important;
+  max-width: calc(300px + 2rem + 1250px) !important;  /* ~1432px */
+  margin: 2rem auto !important;
+  gap: 2rem !important;
+  justify-content: center !important;
+}
+
+/* =========================
+   WORLD ANVIL STYLE MENU (Sticky sidebar)
+   ========================= */
+
+.sidebar.left {
+  grid-area: menu !important;
+  position: sticky !important;
+  top: 2rem !important;
+  align-self: start !important;
+  height: fit-content !important;
+  max-height: calc(100vh - 4rem) !important;
+  overflow-y: auto !important;
+  width: 300px !important;
+  background-color: rgba(43, 36, 29, 0.95) !important;
+  border: 2px solid #5d4c3a !important;
+  padding: 1.5rem !important;
+  border-radius: 4px !important;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.7) !important;
+
+  /* Scrollbar styling */
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    background: rgba(43, 36, 29, 0.5);
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #5d4c3a;
+    border-radius: 3px;
+  }
+}
+
+/* Style the WorldAnvilMenu component */
+.world-anvil-menu {
+  width: 100%;
+}
+
+/* Menu title styling */
+.world-anvil-menu h2 {
+  color: #d6cbb7 !important;
+  font-family: var(--headerFont) !important;
+  font-size: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+  padding-bottom: 0.5rem !important;
+  border-bottom: 1px solid #5d4c3a !important;
+  text-align: center !important;
+}
+
+/* Menu list styling */
+.world-anvil-menu ul {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.world-anvil-menu li {
+  margin-bottom: 0.8rem !important;
+}
+
+.world-anvil-menu a {
+  color: #c9b89a !important;
+  text-decoration: none !important;
+  display: block !important;
+  padding: 0.6rem 1rem !important;
+  border-radius: 3px !important;
+  transition: all 0.2s ease !important;
+  border-left: 3px solid transparent !important;
+  font-weight: 500 !important;
+
+  &:hover {
+    background-color: rgba(93, 76, 58, 0.3) !important;
+    color: #e8dcc6 !important;
+    border-left: 3px solid #b89a6d !important;
+    transform: translateX(3px);
+  }
+}
+
+/* Special styling for the "World Codex" text */
+.world-anvil-menu .section-title {
+  color: #b89a6d !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  font-size: 0.9rem !important;
+  margin-top: 1.5rem !important;
+  margin-bottom: 0.8rem !important;
+  padding-left: 0.5rem !important;
+  list-style: none !important;
+}
+
+/* =========================
+   CENTERED CONTENT AREA
+   ========================= */
+
+.center {
+  grid-area: content !important;
+  width: 100% !important;
+  max-width: 100% !important; /* Changed from var(--eld-width) */
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* The actual article content box */
+.center > article {
+  width: 100% !important;
+  max-width: 100% !important; /* Use full width of grid column */
+  padding: 3rem 2.5rem !important;
+  font-family: var(--bodyFont) !important;
+  font-size: 1.05rem !important; /* Slightly larger for better readability */
+  line-height: 1.7 !important;  /* Opens up the text so it doesn't look like a dense manual */
+  letter-spacing: 0.01rem;
+  background-color: var(--ay-paper) !important;
+  color: var(--ay-text) !important;
+  box-shadow:
+    0 0 0 1px rgba(60, 50, 40, 0.1),
+    0 20px 60px rgba(0,0,0,0.8) !important;
+  border-radius: 4px;
+  box-sizing: border-box !important;
+  color: rgba(43, 36, 29, 0.92) !important;
+
+  /* Add a very subtle text-shadow to simulate ink spreading on paper */
+  text-shadow: 0.2px 0.2px 0.5px rgba(43, 36, 29, 0.1);
+
+  p {
+    margin-bottom: 1.5rem !important;
+  }
+  strong, b {
+    color: #1a1512 !important;
+    font-weight: 700 !important;
+  }
+}
+
+/* Headers */
+h1, h2, h3 {
+  font-family: var(--headerFont) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.05rem !important;
+  color: #3d2f24 !important; /* Deep woody brown/black */
+  border-bottom: 1px solid rgba(93, 76, 58, 0.2);
+  padding-bottom: 0.3rem;
+}
+
+/* =========================
+   HOME BUTTON + GAME BUTTON
+   ========================= */
+.world-anvil-menu .home-button {
+  text-align: center !important;
+  margin: 0 0 0.8rem 0 !important; /* Changed: removed top margin */
+  padding: 0 !important;
+  border-bottom: 1px solid rgba(93, 76, 58, 0.3) !important;
+  padding-bottom: 0.8rem !important;
+}
+
+.world-anvil-menu .home-button a {
+  display: inline-block !important;
+  font-weight: 600 !important;
+  color: #b89a6d !important;
+  text-decoration: none !important;
+  padding: 0.4rem 1.2rem !important;
+  background-color: transparent !important;
+  border: 1px solid #5d4c3a !important;
+  border-radius: 4px !important;
+  transition: all 0.2s ease !important;
+  min-width: 140px !important;
+
+  &:hover {
+    background-color: rgba(93, 76, 58, 0.15) !important;
+    color: #e8dcc6 !important;
+    border-color: #b89a6d !important;
+  }
+}
+
+.world-anvil-menu .game-button {
+  text-align: center !important;
+  margin: 1.5rem 0 0 0 !important; /* Added top margin for spacing */
+  padding: 0 !important;
+  border-top: 1px solid rgba(93, 76, 58, 0.3) !important; /* Changed to border-top */
+  padding-top: 0.8rem !important; /* Changed to padding-top */
+}
+
+.world-anvil-menu .game-button a {
+  display: inline-block !important;
+  font-weight: 600 !important;
+  color: #b89a6d !important;
+  text-decoration: none !important;
+  padding: 0.4rem 1.2rem !important;
+  background-color: transparent !important;
+  border: 1px solid #5d4c3a !important;
+  border-radius: 4px !important;
+  transition: all 0.2s ease !important;
+  min-width: 140px !important;
+
+  &:hover {
+    background-color: rgba(93, 76, 58, 0.15) !important;
+    color: #e8dcc6 !important;
+    border-color: #b89a6d !important;
+    }
+}
+
+/* =========================================
+   MAP SIZING - EXPANDED FOR LARGER MAPS
+   =========================================
+   WIDER CANVAS FOR MAP + TIMELINE PAGES ONLY
+========================================= */
+
+/* Expand the content column when the page contains the world map */
+#quartz-body:has(#world-map) {
+  grid-template-columns: 300px minmax(0, 1fr) !important;
+  max-width: calc(100vw - 4rem) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+#quartz-body:has(#world-map) article {
+  padding: 1rem 1rem !important; /* Minimal padding to maximize map space */
+}
+
+/* Center the world map container */
+#world-map {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* If you wrap it in .world-map-container, make sure it doesn't constrain width */
+.world-map-container {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* =========================================
+   SUMMER ISLES REGIONAL MAP - FULL WIDTH
+   ========================================= */
+
+/* Expand grid for Summer Isles page */
+#quartz-body:has(#summer-isles-map) {
+  grid-template-columns: 300px minmax(0, 1fr) !important;
+  max-width: calc(100vw - 4rem) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Reduce article padding on Summer Isles page */
+body[data-slug*="the-summer-isles"] .center > article {
+  padding: 1rem 1rem !important; /* Minimal padding for maximum map space */
+}
+
+/* Center the Summer Isles map container */
+#summer-isles-map {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* =========================
+   6. MOBILE SUPPORT
+   ========================= */
+@media (max-width: 850px) {
+  #quartz-body {
+    display: block !important;
+    max-width: 95% !important;
+    margin: 1rem auto !important;
+  }
+
+  .sidebar.left {
+    position: fixed !important;
+    left: -320px !important;
+    top: 0 !important;
+    height: 100vh !important;
+    width: 280px !important;
+    margin: 0 !important;
+    border: none !important;
+    border-right: 2px solid #5d4c3a !important;
+    border-radius: 0 !important;
+    transition: left 0.3s ease !important;
+    z-index: 1000 !important;
+  }
+
+  .sidebar.left.menu-open {
+    left: 0 !important;
+  }
+
+  .center > article {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 2rem 1.5rem !important;
+  }
+
+  /* Mobile menu toggle button */
+  .menu-toggle {
+    position: fixed !important;
+    top: 1rem !important;
+    left: 1rem !important;
+    z-index: 1001 !important;
+    background-color: #5d4c3a !important;
+    color: #d6cbb7 !important;
+    border: none !important;
+    border-radius: 4px !important;
+    width: 40px !important;
+    height: 40px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5) !important;
+  }
+
+  /* Add close button styles */
+  .menu-close {
+    position: absolute !important;
+    top: 1rem !important;
+    right: 1rem !important;
+    background: none !important;
+    border: none !important;
+    color: #d6cbb7 !important;
+    font-size: 2rem !important;
+    cursor: pointer !important;
+    z-index: 1002 !important;
+    width: 30px !important;
+    height: 30px !important;
+    padding: 0 !important;
+
+    &:hover {
+      color: #e8dcc6 !important;
+    }
+  }
+}
+
+/* =========================================
+   ARCHIVAL FORMULA (THE PRIME LAW)
+   ========================================= */
+.archival-formula {
+  width: 100%;
+  margin: 4rem 0 !important;
+  padding: 3rem 1rem !important;
+  text-align: center;
+  position: relative;
+  
+  /* Decorative rules using Rhaelle's signature gold/muted tones */
+  border-top: 1px solid rgba(139, 115, 85, 0.25);
+  border-bottom: 1px solid rgba(139, 115, 85, 0.25);
+  
+  /* Radial glow to simulate active resonance */
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 80%);
+
+  /* Target KaTeX display container */
+  .katex-display {
+    margin: 0 !important;
+    color: #1a1512 !important;
+    
+    /* Subtle glow to distinguish the "Source Code" of reality */
+    text-shadow: 0px 0px 4px rgba(201, 149, 108, 0.25) !important;
+  }
+}
+
+/* Mobile safety for massive formulas */
+@media (max-width: 850px) {
+  .archival-formula {
+    padding: 2rem 0.5rem !important;
+    .katex-display {
+      font-size: 0.85em !important; /* Scale down slightly so it doesn't clip */
+    }
+  }
+}

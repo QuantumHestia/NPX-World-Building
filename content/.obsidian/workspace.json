@@ -1,0 +1,254 @@
+{
+  "main": {
+    "id": "b06ebc897f9cc7dc",
+    "type": "split",
+    "children": [
+      {
+        "id": "bf529eca07b733b7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "81d4af9e2753d409",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "World-Codex/The-Divine-Ledgers.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "The-Divine-Ledgers"
+            }
+          },
+          {
+            "id": "e00ccda9be7ded14",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6126c090e0fae9e3",
+    "type": "split",
+    "children": [
+      {
+        "id": "4a91ca40b2d21c7a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "57b63f819cac4c4f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "2c8c11ac67eed8db",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "Zero Seal",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "e4b592acdccecdb1",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 257.51103591918945
+  },
+  "right": {
+    "id": "6f8eb5d5e780e211",
+    "type": "split",
+    "children": [
+      {
+        "id": "867e8af7d74f5ad7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "995cd793a6e157fa",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for index"
+            }
+          },
+          {
+            "id": "39c458b6bed9c486",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "index.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from index"
+            }
+          },
+          {
+            "id": "5b1a8c48b0fcf5ca",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "f1acebca8979bbbb",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "7d30353dd5576dc7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "index.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of index"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-leaflet-plugin:Open Leaflet Map": false
+    }
+  },
+  "active": "e00ccda9be7ded14",
+  "lastOpenFiles": [
+    "index.md",
+    "History/The Emergence.md",
+    "History/The First Song.md",
+    "History/History-The First Song.md",
+    "History/History-The Emergence.md",
+    "World-Codex/Eldoria-Timeline.md",
+    "World-Codex/Bestiary.md",
+    "NPCs/Factions/The-Aegis-Court/Hestia.md",
+    "World-Codex/Office-of-the-Archivists.md",
+    "World-Codex/Macro-Timeline-Cosmic-Cycles.md",
+    "World-Codex/Case-Files.md",
+    "Settings/world-navigation.md",
+    "World-Codex/The-Godly-Pantheons.md",
+    "World-Codex/The-Mortal-Factions.md",
+    "World-Codex/The-Divine-Ledgers.md",
+    "NPCs/Unknown-Affiliation/Bard Bard.md",
+    "NPCs/Factions/The-Aegis-Court/Demeter.md",
+    "NPCs/Factions/The-Aegis-Court/Athena.md",
+    "NPCs/Factions/The-Aegis-Court/Poseidon.md",
+    "NPCs/Factions/The-Aegis-Court/Ares.md",
+    "NPCs/Factions/The-Aegis-Court/Hera.md",
+    "NPCs/Factions/The-Aegis-Court/Apollo.md",
+    "NPCs/Factions/The Land of the Dead/Hades.md",
+    "NPCs/Factions/The Land of the Dead",
+    "Notes/Character-Notes/High Archivist Rhaelle Notes.md",
+    "Settings/Kingdoms/Cities/Sarnoît.md",
+    "Settings/Kingdoms/Kingdoms.md",
+    "Untitled.base",
+    "Untitled 1.base",
+    "Images/Portraits/Radiance-Portrait.jpeg",
+    "Images/Portraits/Obsidia-Portrait.jpeg",
+    "Images/Portraits/Nat-Portrait.jpeg",
+    "Images/Portraits/Factions/Mythological-Factions/Olympus/Hestia-Portrait.jpeg",
+    "Images/Portraits/Factions/Mythological-Factions/Olympus/Zeus-Portrait.jpg",
+    "Images/Portraits/Factions/Mythological-Factions/Olympus/Hera-Portrait.jpeg",
+    "Images/Portraits/Factions/Mythological-Factions/Olympus/Athena-Portrait.jpeg",
+    "Images/Portraits/Factions/Mythological-Factions/Olympus/Artemis-Portrait.jpeg",
+    "Images/Portraits/Factions/Mythological-Factions/Olympus/Apollo-Portrait.jpg",
+    "Images/Portraits/Factions/Mythological-Factions/Olympus/Aphrodite-Portrait.jpeg",
+    "Chats",
+    "copilot/copilot-custom-prompts",
+    "copilot",
+    "NPCs/Unknown-Affiliation",
+    "Archival-Materials",
+    "Archival-Materials/Case-Files",
+    "Godly-Factions/The Jade Palace"
+  ]
+}

@@ -1,0 +1,39 @@
+/* _quotes.scss */
+
+.callout[data-callout="quote"] {
+  background-color: rgba(43, 36, 29, 0.05) !important; // Suble dark-brown tint
+  border: none !important;
+  border-left: 3px solid #5d4c3a !important; // Matching your sidebar border
+  padding: 2rem 2.5rem !important;
+  margin: 2rem 0 !important;
+  position: relative;
+  border-radius: 2px !important;
+
+  /* The Main Quote Text */
+  & .callout-content {
+    & > p {
+      font-family: 'IM Fell English', serif !important; // Matching your "Veritas" stamp
+      font-size: 1.15rem !important;
+      line-height: 1.6 !important;
+      color: #2b241d !important;
+      font-style: italic;
+    }
+  }
+
+  /* Large Decorative Background Quote */
+  &::before {
+    content: "“";
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-size: 5rem;
+    color: rgba(93, 76, 58, 0.15); // Faded ink look
+    font-family: serif;
+    pointer-events: none;
+  }
+
+  /* Hide the default "Quote" title icon/text to keep it clean */
+  & > .callout-title {
+    display: none !important;
+  }
+}

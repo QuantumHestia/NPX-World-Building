@@ -1,0 +1,315 @@
+/* ==========================================================================
+   Eldoria Timeline
+   Scoped to pages containing: #world-timeline
+
+   Structure expected by the timeline JS:
+   - Event title:   <h3> ... [[Wikilink]] ... </h3>
+   - Event body:    <p> ... </p> immediately after the <h3>
+
+   This stylesheet:
+   - Styles the vertical “weave” line down the center
+   - Styles each event as a two-part card (h3 + following p)
+   - Alternates cards left/right on desktop; single column on mobile
+   ========================================================================== */
+
+/* ---------- Animation: pulse for the center line ---------- */
+@keyframes weavePulse {
+  0%, 100% { opacity: 0.30; filter: blur(1px); }
+  50%      { opacity: 0.90; filter: blur(0px); }
+}
+
+/* ========================================================================== */
+/* Timeline scope                                                              */
+/* ========================================================================== */
+body:has(#world-timeline) {
+  /* =========================
+     Theme variables (tweak)
+     ========================= */
+  --tl-max-width: 1000px;
+
+  --tl-card-bg: #1e1e19;
+  --tl-card-bg-top: #25251f;
+  --tl-card-border: rgba(139, 172, 127, 0.32);
+  --tl-card-shadow: 0 18px 60px rgba(0, 0, 0, 0.45);
+
+  --tl-text: #e8dcc6;
+  --tl-muted: rgba(232, 220, 198, 0.78);
+  --tl-accent: #caa46d;
+
+  --tl-line-top: 280px;
+  --tl-line-width: 2px;
+
+  /* =========================
+     Layout container
+     ========================= */
+  .center > article {
+    background: transparent !important;
+    padding: 4rem 2rem !important;
+    max-width: var(--tl-max-width) !important;
+    margin: 0 auto !important;
+    position: relative !important;
+
+    box-shadow: none !important;
+    border: none !important;
+    overflow: visible !important;
+
+    /* Center vertical line */
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50% !important;
+      transform: translateX(-50%);
+      top: var(--tl-line-top);
+      bottom: 0;
+      width: var(--tl-line-width);
+
+      background: linear-gradient(
+        to bottom,
+        transparent,
+        #8bac7f,
+        #a8c99a,
+        transparent
+      ) !important;
+
+      animation: weavePulse 6s infinite ease-in-out !important;
+      z-index: 0;
+    }
+  }
+
+  /* =========================
+     Page title (optional polish)
+     ========================= */
+  .center .page-header h1,
+  .center article > h1:first-child {
+    margin: 3.2rem auto 2.6rem auto !important;
+    text-align: center !important;
+    position: relative !important;
+    display: block !important;
+
+    color: var(--tl-text) !important;
+    text-shadow: 0 10px 40px rgba(0, 0, 0, 0.45) !important;
+
+    &::after {
+      content: '' !important;
+      position: absolute;
+      bottom: -18px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 260px;
+      height: 1px;
+      background: linear-gradient(to right, transparent, #8bac7f, transparent) !important;
+      box-shadow: 0 0 15px rgba(139, 172, 127, 0.35) !important;
+    }
+  }
+
+  /* ======================================================================== */
+  /* Headings                                                                  */
+  /* ======================================================================== */
+
+  /* Center all H2 (era headers) */
+  article h2 {
+    margin-top: 3.2rem !important;
+    padding: 0.55rem 0.9rem !important;
+
+    display: block !important;
+    width: fit-content;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+
+    background: rgba(18, 18, 14, 0.72) !important;
+    border: 1px solid rgba(232, 220, 198, 0.12) !important;
+    border-radius: 14px !important;
+    color: var(--tl-text) !important;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Make the first “Calendar Conventions” block readable on bright backgrounds */
+  article > h2:first-of-type {
+    margin-top: 0 !important;
+
+    /* Keep the intro block from spanning edge-to-edge, and center it */
+    max-width: 760px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    padding: 1.1rem 1.4rem 0.7rem !important;
+    background: rgba(18, 18, 14, 0.92) !important;
+    border: 1px solid rgba(232, 220, 198, 0.14) !important;
+    border-bottom: none !important;
+    border-radius: 18px 18px 0 0 !important;
+  }
+
+  article > h2:first-of-type + ul {
+    max-width: 760px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    margin-top: 0 !important;
+    margin-bottom: 2.2rem !important;
+    padding: 0.1rem 1.4rem 1.1rem !important;
+
+    background: rgba(18, 18, 14, 0.92) !important;
+    border: 1px solid rgba(232, 220, 198, 0.14) !important;
+    border-top: none !important;
+    border-radius: 0 0 18px 18px !important;
+
+    color: var(--tl-muted) !important;
+
+    li {
+      margin: 0.35rem 0 !important;
+      line-height: 1.55 !important;
+    }
+  }
+
+  /* ======================================================================== */
+  /* Timeline cards                                                            */
+  /* ======================================================================== */
+
+  /* Event title (card header) */
+  article h3 {
+    position: relative;
+    width: 42% !important;
+    margin: 4rem 0 0 0 !important;
+    padding: 1.35rem 2rem !important;
+
+    background: linear-gradient(180deg, var(--tl-card-bg-top), var(--tl-card-bg)) !important;
+    border: 1px solid var(--tl-card-border) !important;
+    border-radius: 18px 18px 0 0 !important;
+
+    box-shadow: var(--tl-card-shadow), inset 0 0 0 1px rgba(255, 255, 255, 0.03) !important;
+
+    color: var(--tl-text) !important;
+    letter-spacing: 0.01em;
+    z-index: 2;
+
+    transition:
+      transform 0.22s ease,
+      border-color 0.22s ease,
+      box-shadow 0.22s ease;
+
+    /* Timeline node */
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 14px;
+      height: 14px;
+      background: #a8c99a;
+      border-radius: 50%;
+
+      box-shadow:
+        0 0 10px #a8c99a,
+        0 0 20px rgba(139, 172, 127, 0.6),
+        0 0 40px rgba(139, 172, 127, 0.2) !important;
+
+      z-index: 10;
+      transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease;
+    }
+
+    a.internal {
+      color: var(--tl-accent) !important;
+      text-decoration: none !important;
+
+      &:hover {
+        text-decoration: underline !important;
+        text-underline-offset: 3px;
+      }
+    }
+  }
+
+  /* Event description (card body) */
+  article h3 + p {
+    width: 42% !important;
+    margin: 0 !important;
+    margin-top: -12px !important;
+    padding: 1rem 2rem 1.2rem !important;
+
+    background: var(--tl-card-bg) !important;
+    border: 1px solid var(--tl-card-border) !important;
+    border-top: none !important;
+    border-radius: 0 0 18px 18px !important;
+
+    box-shadow: var(--tl-card-shadow) !important;
+
+    color: var(--tl-muted) !important;
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+    z-index: 1;
+  }
+
+  /* Alternate left/right positioning */
+  article h3:nth-of-type(odd) {
+    margin-left: auto !important; /* right side */
+    text-align: left !important;
+    --dir: 1;
+
+    &::before {
+      left: -11.5% !important;
+      transform: translate(-50%, -50%);
+    }
+
+    & + p {
+      margin-left: auto !important;
+      text-align: left !important;
+    }
+  }
+
+  article h3:nth-of-type(even) {
+    margin-right: auto !important; /* left side */
+    text-align: right !important;
+    --dir: -1;
+
+    &::before {
+      right: -11.5% !important;
+      transform: translate(50%, -50%);
+    }
+
+    & + p {
+      margin-right: auto !important;
+      text-align: right !important;
+    }
+  }
+
+  /* Hover polish */
+  article h3:hover,
+  article h3:hover + p {
+    transform: translateY(-2px);
+    border-color: rgba(139, 172, 127, 0.55) !important;
+  }
+
+  article h3:hover::before {
+    background: #ffffff;
+    box-shadow:
+      0 0 20px #ffffff,
+      0 0 40px #a8c99a,
+      0 0 60px rgba(139, 172, 127, 0.8) !important;
+
+    /* Gentle, symmetric “pop” */
+    transform: translate(calc(-50% * var(--dir, 1)), -50%) scale(1.25) !important;
+  }
+
+  /* ======================================================================== */
+  /* Mobile: single column                                                     */
+  /* ======================================================================== */
+  @media (max-width: 900px) {
+    .center > article::before {
+      left: 26px !important;
+      top: 220px !important;
+    }
+
+    article h3,
+    article h3 + p {
+      width: calc(100% - 56px) !important;
+      margin-left: 56px !important;
+      margin-right: 0 !important;
+      text-align: left !important;
+    }
+
+    article h3::before {
+      left: -30px !important;
+      right: auto !important;
+      transform: translate(-50%, -50%) !important;
+    }
+  }
+}

@@ -1,0 +1,310 @@
+/* =========================
+   WORLD MAP STYLES
+   ========================= */
+
+.world-map-container {
+  margin: 2rem 0;
+  border: 3px solid #5d4c3a;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.world-map {
+  z-index: 1;
+  background: #2b241d;
+  
+  .leaflet-container {
+    background: #2b241d !important;
+    font-family: var(--bodyFont);
+  }
+  
+  .leaflet-popup-content {
+    font-family: var(--bodyFont);
+    color: var(--ay-text);
+    
+    h3 {
+      margin: 0 0 0.5rem 0;
+      color: #8b4513;
+    }
+    
+    .map-link {
+      color: #8b4513;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      margin-top: 0.5rem;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+/* =========================
+   LEAFLET ZOOM CONTROLS FIX
+   ========================= */
+
+/* Ensure zoom controls are visible and clickable */
+.leaflet-control-zoom {
+  pointer-events: auto !important;
+  z-index: 1000 !important;
+}
+
+.leaflet-control-zoom a {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  background-color: #fff !important;
+  color: #000 !important;
+  text-decoration: none !important;
+  display: block !important;
+  width: 30px !important;
+  height: 30px !important;
+  line-height: 30px !important;
+  text-align: center !important;
+  border: 2px solid rgba(0,0,0,0.2) !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+}
+
+.leaflet-control-zoom a:hover {
+  background-color: #f4f4f4 !important;
+  color: #000 !important;
+}
+
+.leaflet-control-zoom-in {
+  border-radius: 4px 4px 0 0 !important;
+  border-bottom: 1px solid #ccc !important;
+}
+
+.leaflet-control-zoom-out {
+  border-radius: 0 0 4px 4px !important;
+}
+
+/* Ensure all Leaflet controls work */
+.leaflet-control {
+  pointer-events: auto !important;
+}
+
+.map-legend {
+  background: rgba(43, 36, 29, 0.9);
+  padding: 1rem 1.5rem;
+  border-top: 2px solid #5d4c3a;
+  
+  h4 {
+    margin: 0 0 0.75rem 0;
+    color: #d6cbb7;
+    font-size: 1rem;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    color: #c9b89a;
+    font-size: 0.9rem;
+  }
+  
+  .legend-icon {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+/* Custom marker styles */
+.city-marker, .town-marker, .village-marker {
+  background: transparent !important;
+  border: none !important;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+/* Mobile map adjustments */
+@media (max-width: 768px) {
+  .world-map {
+    height: 400px !important;
+  }
+  
+  .map-legend ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+/* Remove or hide horizontal rules */
+hr {
+  display: none !important;
+}
+
+/* =========================
+   FULL-PAGE MAP STYLING
+   ========================= */
+
+/* Hide the page title/header on the World Navigation map page */
+body[data-slug="world-navigation"] .page-header {
+  display: none !important;
+}
+
+/* Optional: remove the extra top spacing that the header usually creates */
+body[data-slug="world-navigation"] .center > article {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+/* Target the world-map page specifically */
+body[data-slug="world-navigation"] .center > article {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
+body[data-slug="world-navigation"] #world-map {
+  border-radius: 8px;
+  border: 3px solid #5d4c3a;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Hide the title on map page if you want */
+body[data-slug="world-navigation"] article > h1 {
+  display: none !important;
+}
+
+/* Hide the page title heading on the World Navigation page */
+body[data-slug="world-navigation"] .center > article > h1:first-of-type,
+body[data-slug="world-navigation"] .center > article > h2:first-of-type {
+  display: none !important;
+}
+
+/* Remove the dead space the heading would have contributed */
+body[data-slug="world-navigation"] .center > article > h1:first-of-type + *,
+body[data-slug="world-navigation"] .center > article > h2:first-of-type + * {
+  margin-top: 0 !important;
+}
+
+/* =========================
+   REGIONAL PIN STYLES
+   ========================= */
+
+/* The Round Pin */
+.region-pin {
+  background: rgba(26, 74, 110, 0.85); /* Maritime Blue */
+  border: 2px solid #b89a6d;           /* Gold Border */
+  border-radius: 50%;
+  text-align: center;
+  line-height: 36px; /* Vertically centers the emoji */
+  font-size: 1.2rem;
+  box-shadow: 0 0 15px rgba(184, 154, 109, 0.6);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+  animation: pulse 3s infinite;
+}
+
+.region-pin:hover {
+  transform: scale(1.15);
+  background: #1a4a6e;
+  box-shadow: 0 0 25px rgba(184, 154, 109, 1);
+  z-index: 1000 !important;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(184, 154, 109, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(184, 154, 109, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(184, 154, 109, 0); }
+}
+
+/* The Popup Button */
+.region-btn {
+  display: block;
+  margin-top: 0.8rem;
+  background: #1a4a6e;
+  color: #fff !important;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 4px;
+  text-decoration: none !important;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.region-btn:hover {
+  background: #b89a6d;
+  color: #1a1512 !important;
+}
+
+/* Popup Content Styling */
+.map-popup-region h3 {
+  margin: 0 0 0.5rem 0;
+  color: #1a4a6e;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.25rem;
+}
+.map-popup-region p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* =========================
+   CRITICAL HEIGHT FIX
+   ========================= */
+
+/* MAIN WORLD MAP - Must have explicit height */
+#world-map {
+  width: 100% !important;
+  height: 850px !important; /* CRITICAL: Explicit height */
+  min-height: 850px !important;
+  border-radius: 8px;
+  border: 3px solid #5d4c3a;
+  background: #2b241d;
+  margin: 0 auto !important; /* Center the map */
+}
+
+/* SUMMER ISLES REGIONAL MAP - Must have explicit height */
+#summer-isles-map {
+  width: 100% !important;
+  max-width: none !important;
+  height: 750px !important; /* CRITICAL: Explicit height */
+  min-height: 750px !important;
+  margin: 1rem auto !important; /* Center the map */
+  border: 2px solid #5d4c3a;
+  border-radius: 4px;
+  background: #2b241d;
+}
+
+/* Ensure the Leaflet engine utilizes the full width and height */
+.leaflet-container {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Target the Summer Isles page specifically */
+body[data-slug*="the-summer-isles"] {
+  /* Allow the article to use full width of the paper area */
+  .center > article {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
+
+/* Mobile responsiveness for maps */
+@media (max-width: 768px) {
+  #world-map {
+    height: 600px !important;
+    min-height: 600px !important;
+  }
+  
+  #summer-isles-map {
+    height: 500px !important;
+    min-height: 500px !important;
+  }
+}
