@@ -1,10 +1,10 @@
-# Node dependencies — restored with npm ci
+# Reinstall with npm ci
 node_modules/
 
-# Quartz generated website output
+# Generated Quartz website
 public/
 
-# Environment variables and credentials
+# Credentials
 .env
 .env.*
 !.env.example
