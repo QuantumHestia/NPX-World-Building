@@ -1,16 +1,29 @@
 [
   {
-    "name": "Rhaelle Hollen",
-    "slug": "/npcs/rhaelle-hollen",
-    "portrait": "/static/portraits/rhaelle.jpg",
-    "faction_id": "gilded-fleet",
-    "affiliation": "The Gilded Fleet"
+    "name": "High Archivist Rhaelle",
+    "slug": "/npcs/factions/archivists/high-archivist-rhaelle",
+    "portrait": "/static/npcs/placeholder.jpg",
+    "faction": "The Archives",
+    "status": "active",
+    "timeline": "/timeline",
+    "map": null
   },
   {
-    "name": "Captain Valerius",
-    "slug": "/npcs/valerius",
-    "portrait": "/static/portraits/valerius.jpg",
-    "faction_id": "azure-guard",
-    "affiliation": "The Azure Guard"
+    "name": "High Archivist Seiwen (The Golden-Thread)",
+    "slug": "/npcs/factions/archivists/high-archivist-seiwen",
+    "portrait": "/static/npcs/placeholder.jpg",
+    "faction": "The Archives",
+    "status": "active",
+    "timeline": "/timeline",
+    "map": null
+  },
+  {
+    "name": "Raven",
+    "slug": "/npcs/factions/archivists/raven",
+    "portrait": "/static/npcs/placeholder.jpg",
+    "faction": "The Archives",
+    "status": "active",
+    "timeline": "/timeline",
+    "map": null
   }
 ]

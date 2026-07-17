@@ -202,16 +202,27 @@ body[data-slug="world-navigation"] .center > article > h2:first-of-type + * {
   line-height: 36px; /* Vertically centers the emoji */
   font-size: 1.2rem;
   box-shadow: 0 0 15px rgba(184, 154, 109, 0.6);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   cursor: pointer;
   animation: pulse 3s infinite;
 }
 
 .region-pin:hover {
-  transform: scale(1.15);
   background: #1a4a6e;
   box-shadow: 0 0 25px rgba(184, 154, 109, 1);
   z-index: 1000 !important;
+}
+
+/* Leaflet owns the marker element's transform. Animate the child so the
+   marker remains attached to its map coordinate while panning and zooming. */
+.region-pin > span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.region-pin:hover > span {
+  transform: scale(1.15);
 }
 
 /* Pulse Animation */

@@ -18,9 +18,10 @@
     "format": "npx prettier . --write",
     "test": "tsx --test",
     "profile": "0x -D prof ./quartz/bootstrap-cli.mjs build --concurrency=1",
-
-    "build": "node quartz/static/js/generate-npc-registry.mjs && npx quartz build",
-    "serve": "node quartz/static/js/generate-npc-registry.mjs && npx quartz build --serve"
+    "images:optimize": "node scripts/optimize-portraits.mjs",
+    "images:check": "node scripts/optimize-portraits.mjs --dry-run",
+    "build": "npm run images:optimize && node quartz/static/js/generate-npc-registry.mjs && npx quartz build",
+    "serve": "npm run images:optimize && node quartz/static/js/generate-npc-registry.mjs && npx quartz build --serve"
   },
   "engines": {
     "npm": ">=10.9.2",

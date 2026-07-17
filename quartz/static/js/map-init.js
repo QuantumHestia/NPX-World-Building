@@ -14,7 +14,8 @@
       tileDir: 'eldoria',
       width: 6336,
       height: 2688,
-      initialView: [[1344, 3168], -1.6],
+      initialCenter: [3168, 1344],
+      initialZoom: -1.6,
       hasPins: true
     },
     'summer-isles-map': {
@@ -45,6 +46,18 @@
     }
   });
 
+  function getGeometry(cfg) {
+    const tileHeight = Math.ceil(cfg.height / TILE_SIZE) * TILE_SIZE;
+    const bottomPadding = tileHeight - cfg.height;
+
+    return {
+      // Keep the complete image visible while excluding generated bottom padding.
+      bounds: L.latLngBounds([bottomPadding, 0], [tileHeight, cfg.width]),
+      // Convert ordinary top-left image pixels to CRS.Simple coordinates.
+      imagePoint: ([x, y]) => L.latLng(tileHeight - y, x),
+    };
+  }
+
   function cleanup() {
     if (mapInstance) {
       mapInstance.remove();
@@ -66,7 +79,7 @@
     cleanup();
 
     try {
-      const bounds = [[0, 0], [activeConfig.height, activeConfig.width]];
+      const geometry = getGeometry(activeConfig);
 
       mapInstance = L.map(activeConfig.id, {
         crs: L.CRS.Simple,
@@ -87,20 +100,26 @@
         // For zoom 1-2, Leaflet scales up the zoom-0 tiles.
         maxNativeZoom: 0,
         noWrap: true,
-        bounds: bounds,
+        bounds: geometry.bounds,
         _cfg: activeConfig
       }).addTo(mapInstance);
 
-      mapInstance.setMaxBounds(bounds);
+      mapInstance.setMaxBounds(geometry.bounds);
 
       if (activeConfig.id === 'world-map') {
-        const islandCoords = [1313, 2928];
-        const zoomIcon = L.divIcon({ className: 'region-pin', html: '<span>🔍</span>', iconSize: [40, 40] });
+        const islandCoords = geometry.imagePoint([2928, 1313]);
+        const zoomIcon = L.divIcon({
+          className: 'region-pin',
+          html: '<span>🔍</span>',
+          iconSize: [40, 40],
+          iconAnchor: [20, 20],
+          popupAnchor: [0, -22]
+        });
         const marker = L.marker(islandCoords, { icon: zoomIcon }).addTo(mapInstance);
         marker.bindPopup('<b>The Summer Isles</b><br><a href="/Settings/Regions/The-Summer-Isles/the-summer-isles">Enter Region →</a>');
-        mapInstance.setView(...activeConfig.initialView);
+        mapInstance.setView(geometry.imagePoint(activeConfig.initialCenter), activeConfig.initialZoom);
       } else {
-        mapInstance.fitBounds(bounds);
+        mapInstance.fitBounds(geometry.bounds);
       }
 
       setTimeout(() => mapInstance?.invalidateSize(), 50);
