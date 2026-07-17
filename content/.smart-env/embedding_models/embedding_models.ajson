@@ -1,1 +1,0 @@
-"embedding_models:transformers#1773081294416": {"api_key":"","provider_key":"transformers","model_key":"Snowflake/snowflake-arctic-embed-xs","dims":384,"max_tokens":512,"class_name":"EmbeddingModel","created_at":1773081294416,"key":"transformers#1773081294416","adapter":"transformers","description":"Transformers (Local, built-in)","default_model":"TaylorAI/bge-micro-v2"},
