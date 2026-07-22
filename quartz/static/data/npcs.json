@@ -1,7 +1,7 @@
 [
   {
     "name": "High Archivist Rhaelle",
-    "slug": "/npcs/factions/archivists/high-archivist-rhaelle",
+    "slug": "/codex/npcs/factions/archivists/high-archivist-rhaelle",
     "portrait": "/static/npcs/placeholder.jpg",
     "faction": "The Archives",
     "status": "active",
@@ -10,7 +10,7 @@
   },
   {
     "name": "High Archivist Seiwen (The Golden-Thread)",
-    "slug": "/npcs/factions/archivists/high-archivist-seiwen",
+    "slug": "/codex/npcs/factions/archivists/high-archivist-seiwen",
     "portrait": "/static/npcs/placeholder.jpg",
     "faction": "The Archives",
     "status": "active",
@@ -19,7 +19,16 @@
   },
   {
     "name": "Raven",
-    "slug": "/npcs/factions/archivists/raven",
+    "slug": "/codex/npcs/factions/archivists/raven",
+    "portrait": "/static/npcs/placeholder.jpg",
+    "faction": "The Archives",
+    "status": "active",
+    "timeline": "/timeline",
+    "map": null
+  },
+  {
+    "name": "Yoo-Seongyun",
+    "slug": "/codex/npcs/factions/archivists/yoo-seongyun",
     "portrait": "/static/npcs/placeholder.jpg",
     "faction": "The Archives",
     "status": "active",

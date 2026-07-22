@@ -94,7 +94,7 @@ Eldoria breathes through contradiction. It's a world where household Gods may an
 
 > - [[Cities|Cities]] — settlements, ports, capitals, ruins, and trade hubs.
 
-> - [[bestiary|Bestiary]] — creatures, monsters, anomalies, and things the Archive has not yet agreed how to classify.
+> - [[Bestiary|Bestiary]] — creatures, monsters, anomalies, and things the Archive has not yet agreed how to classify.
 
   
 
@@ -180,7 +180,7 @@ Most entries use a practical confidence scale:
 
 > - [[Persons-of-Interests|Notable Figures]] — rulers, scholars, saints, rebels, criminals, patrons, and other inconvenient people.
 
-> - [[bestiary|Bestiary]] — beasts, spirits, created things, corrupted things, and creatures that resist tidy categorization.
+> - [[Bestiary|Bestiary]] — beasts, spirits, created things, corrupted things, and creatures that resist tidy categorization.
 
   
 

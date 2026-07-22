@@ -14,7 +14,7 @@ public/
 # OS metadata
 .DS_Store
 
-# Local Obsidian and AI state
+# Local Obsidian state
 content/.obsidian/
 content/.smart-env/
 
