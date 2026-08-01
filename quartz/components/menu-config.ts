@@ -10,7 +10,6 @@ export const menuConfig = {
           title: "Office of the Archivists",
           slug: "Codex/World-Codex/Office-of-the-Archivists",
         },
-        { title: "Chronicles", slug: "Chronicles" },
         {
           title: "The Magical System",
           slug: "Codex/Systems/The-Magic-System/The-Unified-Theory-of-the-Weave",
@@ -18,6 +17,10 @@ export const menuConfig = {
         { title: "World Navigation", slug: "Codex/Settings/world-navigation" },
         { title: "Timeline", slug: "Codex/World-Codex/Eldoria-Timeline" },
       ],
+    },
+    {
+      title: "Chronicles",
+      items: [{ title: "Enter the Reading Room", slug: "Chronicles" }],
     },
     {
       title: "Archival Materials",

@@ -544,3 +544,74 @@
     transition: none !important;
   }
 }
+
+/* Mobile reading room: preserve the illustrated manuscript hierarchy. */
+@media (max-width: 760px) {
+  .chronicles-room {
+    margin-inline: -0.75rem;
+    padding: 1.6rem 0.85rem 2rem !important;
+    border-radius: 0;
+  }
+
+  .chronicles-masthead {
+    margin-bottom: 2rem;
+
+    h1 {
+      font-size: clamp(2.7rem, 15vw, 4.25rem) !important;
+      letter-spacing: 0.04em !important;
+    }
+  }
+
+  .chronicles-intro {
+    font-size: 0.98rem;
+  }
+
+  .chronicle-featured {
+    grid-template-columns: 1fr;
+    margin-bottom: 2rem;
+  }
+
+  .chronicle-featured-art {
+    aspect-ratio: 16 / 10;
+    min-height: 0;
+  }
+
+  .chronicle-featured-copy {
+    padding: 1.5rem 1.25rem 1.65rem;
+
+    h2 {
+      font-size: clamp(1.9rem, 9vw, 2.7rem) !important;
+    }
+  }
+
+  .chronicles-filter-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    button {
+      min-height: 42px;
+      padding-inline: 0.4rem;
+    }
+  }
+
+  .chronicle-card {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  .chronicle-card-art {
+    aspect-ratio: 16 / 7;
+    min-height: 0;
+  }
+
+  .chronicle-card-copy {
+    min-height: 245px;
+    padding: 1.35rem 1.15rem 1.2rem;
+  }
+
+  .chronicle-card-link,
+  .chronicle-enter {
+    min-height: 44px;
+    box-sizing: border-box;
+  }
+}

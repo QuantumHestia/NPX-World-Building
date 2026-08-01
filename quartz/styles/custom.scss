@@ -452,3 +452,17 @@ body[data-slug*="the-summer-isles"] .center > article {
     }
   }
 }
+
+/* iOS-safe mobile menu controls. */
+@media (max-width: 850px) {
+  .menu-toggle,
+  .menu-close {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body.mobile-menu-open {
+    overflow: hidden;
+    overscroll-behavior: none;
+  }
+}
