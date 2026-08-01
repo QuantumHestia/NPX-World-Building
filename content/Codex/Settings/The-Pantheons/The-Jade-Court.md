@@ -52,7 +52,7 @@ Changing the world through the Jade Court therefore requires patience, standing,
 > <div class="character-grid">
 >
 >> [!abstract] [[Jiutian-Xuannü|Jiutian Xuannü]]
->> ![[Jiutian-Xuannü-Portrait.jpeg]]
+>> ![[Jiutian-Xuannü-Portrait.webp]]
 >> **Status:** Active
 >
 > </div>

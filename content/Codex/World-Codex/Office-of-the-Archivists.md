@@ -172,7 +172,7 @@ And we keep the record because—whether you call it history, truth, or dream—
 >> ![[High-Archivist-Seiwen-Portrait.jpeg]]
 >
 >> [!abstract] [[Raven]]
->> ![[Art/Unused Art/Raven-Portrait.jpeg]]
+>> ![[Art/Unused Art/Raven-Portrait.webp]]
 >
 >
 </div>

@@ -9,7 +9,7 @@ role: High Archivist of Sanction
 
 <div class="npc-header">
 
-![[High-Archivist-Seiwen-Portrait.png]]
+![[High-Archivist-Seiwen-Portrait.webp]]
 
 <div class="npc-header-text">
   

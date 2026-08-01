@@ -10,7 +10,7 @@ tags: ["aegis-court", "deity-dossier", "strategy", "craft", "civic-order"]
 
 <div class="npc-header">
 
-![[Athena-Portrait.jpeg]]
+![[Athena-Portrait.webp]]
 
 <div class="npc-header-text">
 

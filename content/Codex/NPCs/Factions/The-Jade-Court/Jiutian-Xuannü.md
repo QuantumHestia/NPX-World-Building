@@ -9,6 +9,6 @@ author: "High Archivist Rhaelle"
 
 <div class="npc-header">
 
-![[Jiutian-Xuannü-Portrait.jpeg]]
+![[Jiutian-Xuannü-Portrait.webp]]
 
 <div class="npc-header-text">

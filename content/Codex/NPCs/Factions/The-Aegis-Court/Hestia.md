@@ -10,7 +10,7 @@ tags: ["aegis-court", "deity-dossier", "hearth", "hospitality", "sanctuary", "ci
 
 <div class="npc-header">
 
-![[Hestia-Portrait.jpeg]]
+![[Hestia-Portrait.webp]]
 
 <div class="npc-header-text">
 

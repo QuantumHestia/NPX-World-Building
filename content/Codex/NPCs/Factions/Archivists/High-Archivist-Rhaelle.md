@@ -9,7 +9,7 @@ classification: "Senior Authority: Doctrine & Hazardous Holdings"
 
 <div class="npc-header">
 
-![[Portrait-of-High-Archivist-Rhaelle.png]]
+![[Portrait-of-High-Archivist-Rhaelle.webp]]
 
 <div class="npc-header-text">
   

@@ -10,7 +10,7 @@ classification: Field Authority / Custody Instrument
 
 <div class="npc-header">
 
-![[Art/Unused Art/Raven-Portrait.jpeg]]
+![[Art/Unused Art/Raven-Portrait.webp]]
 
 <div class="npc-header-text">
   

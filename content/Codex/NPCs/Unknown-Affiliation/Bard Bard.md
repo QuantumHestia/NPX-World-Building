@@ -8,7 +8,7 @@ author: "High Archivist Rhaelle"
 
 <div class="npc-header">
 
-![[Bard_Bard.jpeg]]
+![[Bard_Bard.webp]]
 
 <div class="npc-header-text">
   

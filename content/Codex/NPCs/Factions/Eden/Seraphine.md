@@ -8,6 +8,6 @@ tags: ["eden", "deity-dossier"]
 ---
 <div class="npc-header">
 
-![[Seraphine-Portrait.png]]
+![[Seraphine-Portrait.webp]]
 
 <div class="npc-header-text">

@@ -1,5 +1,5 @@
 <div class="npc-header">
 
-![[Elara-Portrait.jpeg]]
+![[Elara-Portrait.webp]]
 
 <div class="npc-header-text">

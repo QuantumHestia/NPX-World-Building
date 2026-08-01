@@ -9,7 +9,7 @@ classification: Field Authority / Custody Instrument
 ---
 <div class="npc-header">
 
-![[Yoo-Seongyun-Portrait.png]]
+![[Yoo-Seongyun-Portrait.webp]]
 
 <div class="npc-header-text">
 

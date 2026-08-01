@@ -4,7 +4,7 @@
 > <div class="character-grid">
 >
 >> [!house-blood-raven] [[House Blood Raven|House Blood Raven]]
->> <div class="faction-emblem"><img src="/Shared-Assets/Images/Emblems/House-Blood-Raven.png"></div>
+>> <div class="faction-emblem"><img src="/Images/Factions/House-Blood-Raven.png"></div>
 >>
 >> **Base:** Port Serene | **Influence:** High
 >

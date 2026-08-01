@@ -22,7 +22,7 @@ title: The Godly Pantheons
 > [!info|open] Covenant & Stewardship
 > <div class="character-grid">
 >
->> [!abstract] [[Codex/Settings/The-Pantheons/The-Eden|Eden]]
+>> [!abstract] [[Settings/The-Pantheons/The-Eden|Eden]]
 >> ![[Eden-Emblem.png]]
 >>
 >> **Mode:** Covenant / Guardianship
@@ -32,7 +32,7 @@ title: The Godly Pantheons
 > [!info|open] Rite & Cosmic Order
 > <div class="character-grid">
 >
->> [!abstract] [[Codex/Settings/The-Pantheons/The-Kemet|Kemet]]
+>> [!abstract] [[Settings/The-Pantheons/The-Kemet|Kemet]]
 >> ![[Kemet-Emblem.png]]
 >>
 >> **Mode:** Rite / Judgment / Balance

@@ -42,31 +42,31 @@ The aegis is referenced in the archive as a **legitimating device**: a sign that
 > <div class="character-grid">
 >
 >> [!abstract] [[Zeus|Zeus]]
->> ![[Zeus-Portrait.jpg]]
+>> ![[Zeus-Portrait.webp]]
 >> **Portfolio:** Sky / Kingship
 >
 >> [!abstract] [[Hera|Hera]]
->> ![[Hera-Portrait.jpeg]]
+>> ![[Hera-Portrait.webp]]
 >> **Portfolio:** Oaths / Marriage / Legitimacy
 >
 >> [!abstract] [[Hestia|Hestia]]
->> ![[Hestia-Portrait.jpeg]]
+>> ![[Hestia-Portrait.webp]]
 >> **Lady of the Hearth**
 >
 >> [!abstract] [[Athena|Athena]]
->> ![[Athena-Portrait.jpeg]]
+>> ![[Athena-Portrait.webp]]
 >> **Portfolio:** Strategy / Law
 >
 >> [!abstract] [[Apollo|Apollo]]
->> ![[Apollo-Portrait.jpg]]
+>> ![[Apollo-Portrait.webp]]
 >>
 >
->> [!abstract] [[Codex/NPCs/Factions/The-Aegis-Court/Hermes|Hermes]]
+>> [!abstract] [[NPCs/Factions/The-Aegis-Court/Hermes|Hermes]]
 >>
 >>
 >>
 >
->> [!abstract] [[Codex/NPCs/Factions/The-Aegis-Court/Dionysus|Dionysus]]
+>> [!abstract] [[NPCs/Factions/The-Aegis-Court/Dionysus|Dionysus]]
 >> 
 >> 
 >

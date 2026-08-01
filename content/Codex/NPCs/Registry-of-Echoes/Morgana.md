@@ -7,7 +7,7 @@ status: memorial
 
 <div class="npc-header">
 
-![[Morgana-Portrait.jpeg]]
+![[Morgana-Portrait.webp]]
 
 <div class="npc-header-text">
 

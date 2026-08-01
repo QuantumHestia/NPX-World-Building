@@ -6,6 +6,6 @@ tags: ["unknown"]
 ---
 <div class="npc-header">
 
-![[Jae-Sung-Portrait.jpeg]]
+![[Jae-Sung-Portrait.webp]]
 
 <div class="npc-header-text">
