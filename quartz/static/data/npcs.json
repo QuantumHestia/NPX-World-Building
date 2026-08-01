@@ -5,7 +5,7 @@
     "portrait": "/static/npcs/placeholder.jpg",
     "faction": "The Archives",
     "status": "active",
-    "timeline": "/timeline",
+    "timeline": "/Codex/World-Codex/Eldoria-Timeline",
     "map": null
   },
   {
@@ -14,7 +14,7 @@
     "portrait": "/static/npcs/placeholder.jpg",
     "faction": "The Archives",
     "status": "active",
-    "timeline": "/timeline",
+    "timeline": "/Codex/World-Codex/Eldoria-Timeline",
     "map": null
   },
   {
@@ -23,7 +23,7 @@
     "portrait": "/static/npcs/placeholder.jpg",
     "faction": "The Archives",
     "status": "active",
-    "timeline": "/timeline",
+    "timeline": "/Codex/World-Codex/Eldoria-Timeline",
     "map": null
   },
   {
@@ -32,7 +32,7 @@
     "portrait": "/static/npcs/placeholder.jpg",
     "faction": "The Archives",
     "status": "active",
-    "timeline": "/timeline",
+    "timeline": "/Codex/World-Codex/Eldoria-Timeline",
     "map": null
   }
 ]

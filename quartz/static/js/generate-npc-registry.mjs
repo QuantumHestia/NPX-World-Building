@@ -47,7 +47,10 @@ function parseFrontmatter(md) {
 }
 
 function coerce(v) {
-  const s = String(v).trim().replace(/^"(.*)"$/, "$1").replace(/^'(.*)'$/, "$1");
+  const s = String(v)
+    .trim()
+    .replace(/^"(.*)"$/, "$1")
+    .replace(/^'(.*)'$/, "$1");
   if (s === "true") return true;
   if (s === "false") return false;
   if (s === "null") return null;
@@ -60,7 +63,8 @@ function walk(dir) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
     const p = path.join(dir, entry.name);
     if (entry.isDirectory()) out.push(...walk(p));
-    else if (entry.isFile() && entry.name.toLowerCase().endsWith(".md")) out.push(p);
+    else if (entry.isFile() && entry.name.toLowerCase().endsWith(".md"))
+      out.push(p);
   }
   return out;
 }
@@ -69,7 +73,9 @@ function slugFromPath(mdPath) {
   const rel = path.relative(CONTENT_DIR, mdPath).replace(/\\/g, "/");
   const noExt = rel.replace(/\.md$/i, "");
   // keep folder structure; normalize spaces
-  const parts = noExt.split("/").map(s => s.trim().replace(/\s+/g, "-").toLowerCase());
+  const parts = noExt
+    .split("/")
+    .map((s) => s.trim().replace(/\s+/g, "-").toLowerCase());
   return "/" + parts.join("/");
 }
 
@@ -82,7 +88,8 @@ function main() {
     const fm = parseFrontmatter(md);
     if (!fm) continue;
 
-    const isNpc = (fm.type && String(fm.type).toLowerCase() === "npc") || fm.npc === true;
+    const isNpc =
+      (fm.type && String(fm.type).toLowerCase() === "npc") || fm.npc === true;
     if (!isNpc) continue;
 
     const slug = fm.slug ? String(fm.slug) : slugFromPath(f);
@@ -90,7 +97,11 @@ function main() {
     const mapObj = fm.map && typeof fm.map === "object" ? fm.map : null;
     const map =
       mapObj && mapObj.lat != null && mapObj.lng != null
-        ? { lat: Number(mapObj.lat), lng: Number(mapObj.lng), z: mapObj.z ?? -2.0 }
+        ? {
+            lat: Number(mapObj.lat),
+            lng: Number(mapObj.lng),
+            z: mapObj.z ?? -2.0,
+          }
         : null;
 
     npcs.push({
@@ -99,7 +110,7 @@ function main() {
       portrait: fm.portrait || "/static/npcs/placeholder.jpg",
       faction: fm.faction || "",
       status: fm.status || "",
-      timeline: fm.timeline || "/timeline",
+      timeline: fm.timeline || "/Codex/World-Codex/Eldoria-Timeline",
       map: map && !Number.isNaN(map.lat) && !Number.isNaN(map.lng) ? map : null,
     });
   }

@@ -1,255 +1,176 @@
 ---
-
 title: The Archives of Eldoria
-
-description: The central compendium for the World of Eldoria.
-
+aliases:
+  - Eldoria
+  - Archives of Eldoria
+type: index
+status: active
+description: The central guide to the world, histories, peoples, powers, and unresolved records of Eldoria.
+tags:
+  - eldoria
+  - archive
+  - index
 ---
 
-  
-
-# **🗺️ The Archives of Eldoria**
-
-  
+# The Archives of Eldoria
 
 > [!quote]
-
+> “History is not written at all. It is screamed into the wind and caught by those who knows how to listen.”
 >
+> — [[Codex/NPCs/Factions/Archivists/High-Archivis-Rhaelle|Archivist Rhaelle]]
 
-> "History is not written at all. It is screamed into the wind and caught by those who know how to listen."
+Eldoria is a world shaped by remembered promises, divine rivalries, ruined empires, dangerous songs, and the people forced to live with what history leaves behind. Magic does not sit apart from that history. Every working makes a claim upon reality, and every lasting claim must find something willing—or unable—to bear it.
 
->
-
-> — [[High-Archivist-Rhaelle|High Archivist Rhaelle]]
-
-  
-
----
-
-  
-
-## Welcome to the Archive
-
-  
-In the vast expanse of the cosmos, very few worlds burn with as much brilliance and secrets as Eldoria; a realm where the breath of ancient magic still stirs the air, and the wreckage of fallen empires litter the horizon. Eldoria’s history is a rising crescendo of countless voices—carried by the deeds of kings and rebels, the roar of dragonfire, the whispers of sorcerers, and the resounding anthems of the Bards.
-  
-
-The Archives exist to gather those fragments into a usable order. Here you will find maps and city ledgers, divine dossiers, accounts of impossible events, field notes on monsters, faction records, magical theory, and the private irritations of the archivists unfortunate enough to maintain them.
-
-  
+The Archive gathers those claims into a usable record: places and peoples, gods and factions, magical doctrine, field reports, disputed histories, and the contradictions that have not yet been safely resolved.
 
 > [!archivist-note-left]
-
-> *"Usable order" is the polite version.*
-
->
-
-> *The less polite version is that everyone lies, every kingdom dates its victories differently, and half the temple records were copied by people who believed punctuation was an enemy of faith.*
-
-  
-
-Eldoria breathes through contradiction. It's a world where household Gods may answer more reliably than kings, where a song can preserve history better than a monument, where the Weave bends under recognition, debt, distance, and desire. Some truths are attested by ledgers. Others survive only because someone kept singing when the libraries burned.
-
-  
+> “Usable” does not mean complete. It means the missing pieces have been labeled before someone mistakes the gaps for doors.
 
 ---
 
-  
+## Begin Here
 
-## Start Here
+For a first reading of Eldoria, follow these records in order:
 
-  
+1. [[world-navigation|World Navigation]] — the geographic entry point into the setting.
+2. [[Eldoria-Timeline|Timeline]] — recorded eras, magical development, political fractures, and unfinished event files.
+3. [[Codex/History/The Emergence|The Emergence]] — the threshold after which repeatable magic became part of recorded life.
+4. [[The-Unified-Theory-of-the-Weave|The Unified Theory of the Weave]] — the current working model of claims, authority, anchors, burdens, and magical settlement.
+5. [[Office-of-the-Archivists|The Office of the Archivists]] — why these records exist, what the Archive protects, and what it refuses to publish.
 
-> [!info] **New Readers**
-
->
-
-> If this is your first visit, begin with the broad foundations:
-
->
-
-> - [[world-navigation|World Navigation]] — a visual and geographic entry point into Eldoria.
-
-> - [[The-Unified-Theory-of-the-Weave|The Unified Theory of the Weave]] — the working model for magic, breach, recognition, and anchors.
-
-> - [[History-The Emergence|The Emergence]] — the threshold event that made repeatable magic possible.
-
-> - [[History-The First Song|The First Song]] — myth, memory, and the oldest surviving musical tradition.
-
-  
-
-> [!tip] **For Players**
-
->
-
-> Use these pages when you need people, places, factions, threats, or divine context:
-
->
-
-> - [[Persons-of-Interests|Persons of Interest]] — key figures, patrons, enemies, witnesses, and unreliable narrators.
-
-> - [[The-Mortal-Factions|Mortal Factions]] — guilds, courts, cults, orders, houses, and political movements.
-
-> - [[kingdom|Kingdoms]] — major powers and their claims.
-
-> - [[Cities|Cities]] — settlements, ports, capitals, ruins, and trade hubs.
-
-> - [[Bestiary|Bestiary]] — creatures, monsters, anomalies, and things the Archive has not yet agreed how to classify.
-
-  
-
-> [!example] **For Lore Research**
-
->
-
-> These collections are better read slowly:
-
->
-
-> - [[The-Godly-Pantheons|The Godly Pantheons]] — divine courts, cultic traditions, theological disputes, and recorded manifestations.
-
-> - [[Artifacts|Artifacts]] — objects of power, inheritance, catastrophe, and unresolved provenance.
-
-> - [[High-Archivist-Rhaelle|High Archivist Rhaelle]] — the principal archival voice behind many of these records.
-
-> - [[High-Archivist-Seiwen|High Archivist Seiwen]] — alternate archival perspective and institutional counterweight.
-
-  
+> [!info] The shortest useful explanation of magic
+> **Magnitude** determines what the practitioner must bear. **Breach** determines what reality must accommodate. **Recognition** determines what the world remembers.
 
 ---
 
-  
+## Enter the World
 
-## What the Archive Records
+### For Players
 
-  
+- [[Persons-of-Interests|People of Interest]] — allies, rivals, patrons, suspects, and people the Archive watches for professional reasons.
+- [[The-Mortal-Factions|The Mortal Factions]] — houses, circles, civic powers, and organized interests.
+- [[The-Godly-Pantheons|The Godly Pantheons]] — divine courts, covenant powers, and competing forms of sacred authority.
+- [[Cities]] — the developing register of settlements, ports, capitals, and ruins.
+- [[Bestiary|Bestiary]] — creatures, spirits, anomalies, and classifications still under dispute.
+- [[Artifacts|Artifacts]] — relics and enduring workings whose original claims outlived their makers.
 
-The Archive separates record from interpretation where it can, though the boundary is rarely clean. A tax ledger may preserve a war more honestly than a royal epic. A folk song may remember the shape of a disaster after every official chronicle has corrected itself into uselessness. A divine omen may be genuine, misread, staged, or all three in sequence.
+### For Lore Research
 
-  
+- [[The-Divine-Ledgers|The Divine Ledgers]] — recorded divine lineages, rite-signatures, and disputed descent.
+- [[Codex/History/The First Song|The First Song]] — historical traditions surrounding music, language, memory, and early magical form.
+- [[Eldoria/Codex/Myths/The Emergence|Mythic Accounts of the Emergence]] — cultural interpretations of the world's first repeatable contradictions.
+- [[Case-Files|Case Files]] — the registry of incidents that turned doctrine into field procedure.
 
-Most entries use a practical confidence scale:
+### Chronicles and Other Stories
 
-  
+- [[Chronicles/The Boy and the Fox Goddess|The Boy and the Fox Goddess]] — a surviving chronicle from outside the formal ledgers.
+- [[Codex/Settings/Regions/The Summer Isles/the-summer-isles|The Summer Isles]] — regional records, local powers, and maritime anomalies.
+- [[Codex/NPCs/Registry-of-Echoes/Morgana|Morgana]] — a memorial record held in the Registry of Echoes.
+- [[Codex/NPCs/Unknown-Affiliation/Bard Bard|Bard Bard]] — a resonance-worker whose authority the Archive cannot adequately explain.
 
-- **Attested:** supported by multiple independent source classes.
+---
 
-- **Recorded:** preserved in a credible source, but weakly corroborated.
+## The Foundational Campaign Record
 
-- **Alleged:** reported, disputed, partisan, ecstatic, or unverified.
+The oldest surviving campaign notes describe **Tira’Ah**, a comparatively young continent whose northeastern human territory opens onto trade with **Xophix**. These notes predate the present Archive structure. Their geography is useful, but their naming remains provisional.
 
-- **Inference:** an archival conclusion drawn from patterns in the surviving evidence.
+### What the Early Records Agree Upon
 
-  
+- The campaign begins in **321 A.D., Anno Draconum**, called the Year of Dragons.
+- **Far Waters** is a wealthy royal port and the primary trade connection between the northeastern domain and Xophix.
+- The Crown publicly governs Far Waters, whilst local rumor attributes its real power to an anonymous council of wealthy citizens.
+- **Southwold** lies south or southwest of Far Waters, in a valley beneath the Bestia Dormiens mountains along the Moestum River.
+- Southwold was established as a place of leisure for nobles and has an unusually old permanent population.
+- **Fortune’s Keep**, despite its name, is associated with poverty, crowded districts, beggars, and pickpockets.
+- **The White Forest** is identified as an elven homeland.
+- The northeastern domain contains six major cities, though the surviving notes do not name or describe all six.
+
+> [!warning] Unresolved names in the early record
+> One source names the territory the **Acuriel Domain**; another calls it the **Cerulean Domain**. The central city or stronghold appears as both **Dragontail** and **Dragonkeep**.
+>
+> Until later records establish whether these are renamings, separate places, transcription errors, or rival political usages, the Archive preserves both forms.
 
 > [!archivist-note-right]
-
-> The confidence scale does not mean the Archive is free of error.
-
->
-
-> It means we have labeled the error honestly enough that future scholars may curse us with precision.
-
-  
+> A contradiction written down is a problem. A contradiction “corrected” without evidence is a forgery with good posture.
 
 ---
 
-  
+## The Archive Shelves
 
-## The Codex
+### Lands and Settlements
 
-  
+- [[Codex/Settings/world-navigation|World Navigation]]
+- [[Codex/Settings/Regions/The Summer Isles/the-summer-isles|The Summer Isles]]
+- [[Cities|Cities]]
+- [[Sarnoît|Sarnoît]]
 
-> [!info] 🌍 **Geography & Atlas**
+### Peoples and Powers
 
->
+- [[Codex/World-Codex/Persons-of-Interests|Persons of Interest]]
+- [[Codex/World-Codex/The-Mortal-Factions|The Mortal Factions]]
+- [[Codex/World-Codex/The-Godly-Pantheons|The Godly Pantheons]]
+- [[Codex/Settings/The-Pantheons/Eden|Eden]]
+- [[Codex/Settings/The-Pantheons/The-Aegis-Court|The Aegis Court]]
+- [[Codex/Settings/The-Pantheons/The-Jade-Court|The Jade Court]]
 
-> - [[kingdom|Kingdoms]] — major political powers, disputed borders, dynastic claims, and regional tensions.
+### Magic, Divinity, and Dangerous Objects
 
-> - [[Cities|Cities]] — settlements, capitals, trade hubs, sanctuaries, ports, ruins, and civic archives.
+- [[Codex/Systems/The-Magic-System/The-Unified-Theory-of-the-Weave|The Unified Theory of the Weave]]
+- [[Codex/Magic/First-Songs|First Songs]]
+- [[Codex/World-Codex/The-Divine-Ledgers|The Divine Ledgers]]
+- [[Codex/Artifacts/Artifacts|Artifacts]]
 
-> - [[world-navigation|World Navigation]] — visual atlas, regional paths, and navigational hubs.
+### History, Myth, and Record
 
-  
+- [[Codex/World-Codex/Eldoria-Timeline|The Eldoria Timeline]]
+- [[Codex/World-Codex/Macro-Timeline-Cosmic-Cycles|Macro Timeline: Cosmic Cycles]]
+- [[Codex/History/The Emergence|History: The Emergence]]
+- [[Codex/Myths/The Emergence|Myth: The Emergence]]
+- [[Codex/History/The First Song|History: The First Song]]
+- [[Codex/Myths/The First Song|Myth: The First Song]]
+- [[Codex/World-Codex/Case-Files|Case Files]]
 
-> [!tip] 👥 **Inhabitants**
+### The Archive Itself
 
->
-
-> - [[The-Mortal-Factions|Notable Factions]] — guilds, cults, knightly orders, houses, schools, and civic powers.
-
-> - [[Persons-of-Interests|Notable Figures]] — rulers, scholars, saints, rebels, criminals, patrons, and other inconvenient people.
-
-> - [[Bestiary|Bestiary]] — beasts, spirits, created things, corrupted things, and creatures that resist tidy categorization.
-
-  
-
-> [!example] ✨ **Arcane & Divine**
-
->
-
-> - [[The-Godly-Pantheons|The Pantheons]] — divine courts, living cults, disputed theologies, and recorded interventions.
-
-> - [[The-Unified-Theory-of-the-Weave|How the Weave Works]] — breach, anchor, recognition, drift, cost, and magical consequence.
-
-> - [[Artifacts|Historical Artifacts]] — items of power, relics, instruments, cursed inheritances, and objects with dangerous histories.
-
-  
-
-> [!warning] 🕯️ **History & Memory**
-
->
-
-> - [[History-The Emergence|The Emergence]] — the moment repeatable magic entered recorded history.
-
-> - [[History-The First Song|The First Song]] — the oldest remembered song-cycle and its disputed origins.
-
-> - [[Morgana|Morgana]] — a memorial record preserved under hearth-sign.
-
-> - [[Hestia|Hestia]] — hearth, threshold-law, sanctuary, hospitality, and civic flame.
-
-  
+- [[Codex/World-Codex/Office-of-the-Archivists|The Office of the Archivists]]
+- [[Codex/NPCs/Factions/Archivists/High-Archivist-Rhaelle|High Archivist Rhaelle]]
+- [[Codex/NPCs/Factions/Archivists/High-Archivist-Seiwen|High Archivist Seiwen]]
+- [[Codex/NPCs/Factions/Archivists/Raven|Raven]]
+- [[Codex/NPCs/Factions/Archivists/Yoo-Seongyun|Yoo Seongyun]]
 
 ---
 
-  
+## How to Read an Archival Claim
 
-## Current Archival Priorities
+Eldoria's records distinguish evidence from interpretation. Labels vary slightly between offices, but the following hierarchy is the safest general guide:
 
-  
+- **Record** — preserved in a credible primary source or repeatable observation.
+- **Consensus** — supported across multiple traditions or independent records.
+- **Inference** — the explanation that best fits the available evidence.
+- **Hypothesis** — plausible, disputed, incomplete, or unsafe to test.
+- **Myth** — preserved because it carries cultural memory, symbolic truth, or evidence of what people believed.
 
-The Archive is presently consolidating records in five major areas: the early history of repeatable magic, the structure of the Weave, pantheon relationships, faction claims, and regional navigation. Many pages remain provisional. Some are intentionally incomplete because the surviving evidence is incomplete. Others are incomplete because the archivists involved had the good sense to stop writing before the page became a legal confession.
+Confidence describes the evidence, not the importance of the claim. A low-confidence story may alter a kingdom. A high-confidence fact may still be misunderstood.
 
-  
+---
+
+## Open Files
+
+The Archive is actively reconciling:
+
+- the Acuriel/Cerulean naming conflict,
+- the relationship between Dragontail and Dragonkeep,
+- the remaining cities of the northeastern Tira’Ah domain,
+- the place of Xophix in the wider geography,
+- the chronology of Anno Draconum relative to the ECR timeline,
+- incomplete city, artifact, bestiary, and faction registries,
+- and contradictions between historical and mythic accounts of the First Song.
+
+These are not errors to conceal. They are the edges of the present record.
 
 > [!archivist-note-left]
-
-> If a page appears unfinished, assume one of three things:
-
->
-
-> The records are missing, the witness is dead, or the subject is still politically dangerous.
-
->
-
-> Occasionally, all three.
-
-  
+> If two pages disagree, ask who wrote them, when they wrote them, what they could have known, and who benefited from certainty.
 
 ---
 
-  
-
-## Reading the Archive
-
-  
-
-Treat the Archive as a working body of knowledge rather than a finished encyclopedia. Follow links. Compare claims. Notice who benefits from a version of events. When two pages disagree, the disagreement may be an error, a political fracture, a religious dispute, or the point at which the truth becomes visible.
-
-  
-
-The Archive does not promise certainty. It promises preservation, argument, revision, and enough warning that the next fool who opens a sealed ruin cannot claim no one wrote it down.
-
-  
-
----
+The Archive does not promise a single uncontested truth. It promises preservation, comparison, revision, and enough warning that the next person who opens a sealed ruin cannot claim no one wrote it down.

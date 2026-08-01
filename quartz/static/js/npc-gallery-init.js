@@ -55,17 +55,17 @@ async function initNpcGallery() {
     map.className = 'npc-icon';
     map.title = 'Show on map';
     if (npc.map && typeof npc.map.lat === 'number') {
-      map.href = `/world-navigation?lat=${npc.map.lat}&lng=${npc.map.lng}&z=${npc.map.z ?? -2.0}`;
+      map.href = `/Codex/Settings/world-navigation?lat=${npc.map.lat}&lng=${npc.map.lng}&z=${npc.map.z ?? -2.0}`;
       map.textContent = '🧭';
     } else {
-      map.href = '/world-navigation';
+      map.href = '/Codex/Settings/world-navigation';
       map.textContent = '🧭';
     }
 
     // Timeline icon
     const time = document.createElement('a');
     time.className = 'npc-icon';
-    time.href = npc.timeline || '/timeline';
+    time.href = npc.timeline || '/Codex/World-Codex/Eldoria-Timeline';
     time.title = 'Timeline';
     time.textContent = '⏳';
 

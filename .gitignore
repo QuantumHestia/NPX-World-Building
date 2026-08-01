@@ -17,7 +17,7 @@ public/
 # Local Obsidian state
 content/.obsidian/
 content/.smart-env/
-
+content/.claudian/
 # Generated build caches
 quartz/.quartz-cache/
 tsconfig.tsbuildinfo

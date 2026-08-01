@@ -1,13 +1,17 @@
-import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
+import {
+  QuartzComponent,
+  QuartzComponentConstructor,
+  QuartzComponentProps,
+} from "./types";
 
 interface Options {
-  links: Record<string, string>
+  links: Record<string, string>;
 }
 
-export default ((opts?: Options) => {
+export default ((_opts?: Options) => {
   const Footer: QuartzComponent = ({ displayClass }: QuartzComponentProps) => {
-    return <footer class={`${displayClass ?? ""}`}></footer>
-  }
+    return <footer class={`${displayClass ?? ""}`}></footer>;
+  };
 
-  return Footer
-}) satisfies QuartzComponentConstructor
+  return Footer;
+}) satisfies QuartzComponentConstructor;

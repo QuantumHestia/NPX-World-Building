@@ -61,12 +61,12 @@ The aegis is referenced in the archive as a **legitimating device**: a sign that
 >> ![[Apollo-Portrait.jpg]]
 >>
 >
->> [!abstract] [[NPCs/Factions/The-Aegis-Court/Hermes|Hermes]]
+>> [!abstract] [[Codex/NPCs/Factions/The-Aegis-Court/Hermes|Hermes]]
 >>
 >>
 >>
 >
->> [!abstract] [[NPCs/Factions/The-Aegis-Court/Dionysus|Dionysus]]
+>> [!abstract] [[Codex/NPCs/Factions/The-Aegis-Court/Dionysus|Dionysus]]
 >> 
 >> 
 >

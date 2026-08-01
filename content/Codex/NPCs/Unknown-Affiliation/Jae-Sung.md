@@ -1,5 +1,5 @@
 ---
-title: "Jae Sung"
+title: "Jae-Sung"
 type: Unknown
 status: active
 tags: ["unknown"]

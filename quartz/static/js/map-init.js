@@ -116,7 +116,7 @@
           popupAnchor: [0, -22]
         });
         const marker = L.marker(islandCoords, { icon: zoomIcon }).addTo(mapInstance);
-        marker.bindPopup('<b>The Summer Isles</b><br><a href="/Settings/Regions/The-Summer-Isles/the-summer-isles">Enter Region →</a>');
+        marker.bindPopup('<b>The Summer Isles</b><br><a href="/Codex/Settings/Regions/The-Summer-Isles/the-summer-isles">Enter Region →</a>');
         mapInstance.setView(geometry.imagePoint(activeConfig.initialCenter), activeConfig.initialZoom);
       } else {
         mapInstance.fitBounds(geometry.bounds);

@@ -7,34 +7,34 @@
   border: 3px solid #5d4c3a;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .world-map {
   z-index: 1;
   background: #2b241d;
-  
+
   .leaflet-container {
     background: #2b241d !important;
     font-family: var(--bodyFont);
   }
-  
+
   .leaflet-popup-content {
     font-family: var(--bodyFont);
     color: var(--ay-text);
-    
+
     h3 {
       margin: 0 0 0.5rem 0;
       color: #8b4513;
     }
-    
+
     .map-link {
       color: #8b4513;
       text-decoration: none;
       font-weight: 600;
       display: inline-block;
       margin-top: 0.5rem;
-      
+
       &:hover {
         text-decoration: underline;
       }
@@ -63,7 +63,7 @@
   height: 30px !important;
   line-height: 30px !important;
   text-align: center !important;
-  border: 2px solid rgba(0,0,0,0.2) !important;
+  border: 2px solid rgba(0, 0, 0, 0.2) !important;
   user-select: none !important;
   -webkit-user-select: none !important;
 }
@@ -91,13 +91,13 @@
   background: rgba(43, 36, 29, 0.9);
   padding: 1rem 1.5rem;
   border-top: 2px solid #5d4c3a;
-  
+
   h4 {
     margin: 0 0 0.75rem 0;
     color: #d6cbb7;
     font-size: 1rem;
   }
-  
+
   ul {
     list-style: none;
     margin: 0;
@@ -106,14 +106,14 @@
     flex-wrap: wrap;
     gap: 1.5rem;
   }
-  
+
   li {
     display: flex;
     align-items: center;
     color: #c9b89a;
     font-size: 0.9rem;
   }
-  
+
   .legend-icon {
     margin-right: 0.5rem;
     font-size: 1.2rem;
@@ -121,10 +121,12 @@
 }
 
 /* Custom marker styles */
-.city-marker, .town-marker, .village-marker {
+.city-marker,
+.town-marker,
+.village-marker {
   background: transparent !important;
   border: none !important;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 /* Mobile map adjustments */
@@ -132,16 +134,11 @@
   .world-map {
     height: 400px !important;
   }
-  
+
   .map-legend ul {
     flex-direction: column;
     gap: 0.5rem;
   }
-}
-
-/* Remove or hide horizontal rules */
-hr {
-  display: none !important;
 }
 
 /* =========================
@@ -149,43 +146,43 @@ hr {
    ========================= */
 
 /* Hide the page title/header on the World Navigation map page */
-body[data-slug="world-navigation"] .page-header {
+body[data-slug$="world-navigation"] .page-header {
   display: none !important;
 }
 
 /* Optional: remove the extra top spacing that the header usually creates */
-body[data-slug="world-navigation"] .center > article {
+body[data-slug$="world-navigation"] .center > article {
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
 /* Target the world-map page specifically */
-body[data-slug="world-navigation"] .center > article {
+body[data-slug$="world-navigation"] .center > article {
   background: transparent !important;
   box-shadow: none !important;
   padding: 0 !important;
   border-radius: 0 !important;
 }
 
-body[data-slug="world-navigation"] #world-map {
+body[data-slug$="world-navigation"] #world-map {
   border-radius: 8px;
   border: 3px solid #5d4c3a;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 /* Hide the title on map page if you want */
-body[data-slug="world-navigation"] article > h1 {
+body[data-slug$="world-navigation"] article > h1 {
   display: none !important;
 }
 
 /* Hide the page title heading on the World Navigation page */
-body[data-slug="world-navigation"] .center > article > h1:first-of-type,
-body[data-slug="world-navigation"] .center > article > h2:first-of-type {
+body[data-slug$="world-navigation"] .center > article > h1:first-of-type,
+body[data-slug$="world-navigation"] .center > article > h2:first-of-type {
   display: none !important;
 }
 
 /* Remove the dead space the heading would have contributed */
-body[data-slug="world-navigation"] .center > article > h1:first-of-type + *,
-body[data-slug="world-navigation"] .center > article > h2:first-of-type + * {
+body[data-slug$="world-navigation"] .center > article > h1:first-of-type + *,
+body[data-slug$="world-navigation"] .center > article > h2:first-of-type + * {
   margin-top: 0 !important;
 }
 
@@ -196,7 +193,7 @@ body[data-slug="world-navigation"] .center > article > h2:first-of-type + * {
 /* The Round Pin */
 .region-pin {
   background: rgba(26, 74, 110, 0.85); /* Maritime Blue */
-  border: 2px solid #b89a6d;           /* Gold Border */
+  border: 2px solid #b89a6d; /* Gold Border */
   border-radius: 50%;
   text-align: center;
   line-height: 36px; /* Vertically centers the emoji */
@@ -227,9 +224,15 @@ body[data-slug="world-navigation"] .center > article > h2:first-of-type + * {
 
 /* Pulse Animation */
 @keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgba(184, 154, 109, 0.7); }
-  70% { box-shadow: 0 0 0 10px rgba(184, 154, 109, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(184, 154, 109, 0); }
+  0% {
+    box-shadow: 0 0 0 0 rgba(184, 154, 109, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(184, 154, 109, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(184, 154, 109, 0);
+  }
 }
 
 /* The Popup Button */
@@ -313,7 +316,7 @@ body[data-slug*="the-summer-isles"] {
     height: 600px !important;
     min-height: 600px !important;
   }
-  
+
   #summer-isles-map {
     height: 500px !important;
     min-height: 500px !important;

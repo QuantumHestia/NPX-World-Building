@@ -1,0 +1,304 @@
+/* ========================================================================== 
+   Codex collection landing pages
+   ========================================================================== */
+
+.codex-collection {
+  --collection-ink: #241a14;
+  --collection-muted: #705f51;
+  --collection-gold: #b58a4b;
+  --collection-wine: #6e2525;
+  position: relative;
+  isolation: isolate;
+  min-height: 70vh;
+  padding: clamp(1.5rem, 4vw, 4rem) !important;
+  overflow: hidden;
+  color: var(--collection-ink);
+  background:
+    radial-gradient(
+      circle at 12% 8%,
+      rgba(255, 244, 210, 0.55),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 87% 25%,
+      rgba(122, 31, 31, 0.09),
+      transparent 28%
+    ),
+    linear-gradient(135deg, #ded2ba, #cfc0a4 54%, #dfd2ba);
+  border: 1px solid rgba(72, 51, 35, 0.35);
+  border-radius: 6px;
+  box-shadow:
+    0 25px 75px rgba(0, 0, 0, 0.6),
+    inset 0 0 100px rgba(78, 52, 31, 0.12);
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.33;
+    pointer-events: none;
+    background-image:
+      repeating-linear-gradient(
+        2deg,
+        transparent 0 8px,
+        rgba(78, 52, 31, 0.025) 9px
+      ),
+      repeating-linear-gradient(
+        91deg,
+        transparent 0 14px,
+        rgba(255, 255, 255, 0.035) 15px
+      );
+  }
+}
+
+.codex-collection-masthead {
+  position: relative;
+  margin-bottom: 2.6rem;
+
+  h1 {
+    font-size: clamp(2.8rem, 7vw, 5.7rem) !important;
+  }
+}
+
+.codex-collection-sigil {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  margin: 0.8rem auto 1rem;
+  color: #ead5a9;
+  background: radial-gradient(circle at 35% 30%, #a95048, #722323 70%);
+  border: 2px solid #a8564c;
+  border-radius: 50%;
+  box-shadow:
+    0 6px 16px rgba(72, 22, 22, 0.35),
+    inset 0 0 0 3px rgba(68, 14, 14, 0.22);
+  font-family: var(--headerFont);
+  font-weight: 700;
+  transform: rotate(-4deg);
+}
+
+.codex-collection-content {
+  max-width: 1040px;
+  margin: 0 auto;
+
+  > article {
+    position: relative;
+    width: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible;
+    color: var(--collection-ink) !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+
+    &::after {
+      display: none !important;
+    }
+    > h1:first-of-type {
+      display: none !important;
+    }
+  }
+
+  > article > p:first-of-type {
+    max-width: 700px;
+    margin: 0 auto 1.8rem !important;
+    color: var(--collection-muted) !important;
+    text-align: center;
+    font-style: italic;
+  }
+
+  h2 {
+    width: fit-content;
+    margin: 2rem auto 1rem !important;
+    padding: 0.45rem 1rem !important;
+    color: #f0dec0 !important;
+    background: #493027;
+    border: 1px solid #6d4a39 !important;
+    border-radius: 999px;
+    font-size: 0.78rem !important;
+    letter-spacing: 0.15em !important;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  hr {
+    display: none !important;
+  }
+}
+
+/* Existing Obsidian group callouts become shelf sections. */
+.codex-collection-content > article > .callout[data-callout="info"] {
+  margin: 1.25rem 0 1.8rem !important;
+  padding: 1.25rem !important;
+  overflow: visible !important;
+  background: rgba(246, 235, 210, 0.5) !important;
+  border: 1px solid rgba(77, 51, 34, 0.25) !important;
+  border-radius: 4px !important;
+  box-shadow: 0 9px 24px rgba(63, 42, 27, 0.12) !important;
+
+  > .callout-title {
+    justify-content: center;
+    margin-bottom: 1rem;
+    color: var(--collection-wine) !important;
+    font-family: var(--headerFont);
+    font-size: 1.2rem;
+    letter-spacing: 0.05em;
+
+    .callout-icon {
+      display: none;
+    }
+  }
+}
+
+.codex-collection .character-grid {
+  gap: 1.1rem !important;
+
+  .callout {
+    position: relative;
+    min-height: 210px;
+    overflow: hidden;
+    background: rgba(248, 238, 215, 0.9) !important;
+    border-color: rgba(78, 53, 36, 0.32) !important;
+    box-shadow: 0 8px 20px rgba(63, 42, 27, 0.14) !important;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(14px);
+    animation: collectionArrival 0.5s ease forwards;
+
+    &::after {
+      content: "Open record →";
+      display: block;
+      margin-top: 0.8rem;
+      color: var(--collection-wine);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    &:hover {
+      border-color: rgba(110, 37, 37, 0.55) !important;
+      box-shadow: 0 16px 32px rgba(63, 42, 27, 0.22) !important;
+      transform: translateY(-4px);
+    }
+
+    img {
+      max-height: 150px;
+      object-fit: cover;
+      filter: sepia(0.08) saturate(0.9);
+      transition:
+        transform 0.4s ease,
+        filter 0.4s ease;
+    }
+
+    &:hover img {
+      transform: scale(1.025);
+      filter: saturate(1.05);
+    }
+  }
+}
+
+@keyframes collectionArrival {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Case-file tables become a responsive dossier shelf. */
+.codex-collection-cases table {
+  display: block;
+  width: 100%;
+  margin: 1.5rem 0 0 !important;
+  border: 0 !important;
+  overflow: visible;
+
+  thead {
+    display: none;
+  }
+
+  tbody {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+    gap: 1.15rem;
+  }
+
+  tr {
+    position: relative;
+    display: grid;
+    gap: 0.45rem;
+    padding: 1.4rem 1.4rem 1.2rem;
+    color: var(--collection-ink);
+    background: rgba(248, 238, 215, 0.9);
+    border: 1px solid rgba(78, 53, 36, 0.32);
+    border-radius: 3px;
+    box-shadow: 0 9px 24px rgba(63, 42, 27, 0.15);
+    transition:
+      transform 0.24s ease,
+      box-shadow 0.24s ease,
+      border-color 0.24s ease;
+
+    &.is-clickable {
+      cursor: pointer;
+    }
+    &:hover {
+      transform: translateY(-4px);
+      border-color: rgba(110, 37, 37, 0.55);
+      box-shadow: 0 16px 32px rgba(63, 42, 27, 0.22);
+    }
+  }
+
+  td {
+    display: block;
+    padding: 0 !important;
+    border: 0 !important;
+    color: var(--collection-muted);
+
+    &:first-child {
+      color: var(--collection-wine);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    &:nth-child(2) a {
+      color: var(--collection-ink) !important;
+      font-family: var(--headerFont);
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-decoration: none !important;
+    }
+
+    &:nth-child(3)::before {
+      content: "Location: ";
+      font-weight: 700;
+    }
+    &:nth-child(4)::before {
+      content: "Classification: ";
+      font-weight: 700;
+    }
+    &:nth-child(5)::before {
+      content: "Status: ";
+      font-weight: 700;
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .codex-collection {
+    padding: 1.5rem 1rem !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .codex-collection .character-grid .callout {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}

@@ -1,31 +1,60 @@
 ---
-title: "The Jade Emperor’s Court"
+title: "The Jade Court"
 aliases:
-  - "The Jade Jade Court"
+  - "The Jade Emperor's Court"
+  - "The Jade Emperor’s Court"
 type: pantheon
 ---
 
 <div class="pantheon-page pantheon-jade">
 
-The Jade Emperor’s Court is, in practical terms, an empire that never stops filing.
+# The Jade Court
 
-It presents itself as Heaven’s administrative center: a layered civil service of gods, spirits, and appointed immortals who treat the cosmos as something to be managed through mandate, ritual, and precedent. You do not “challenge” the Court so much as you petition it—through intermediaries, with seals, witnesses, and proper forms—because authority there is less a matter of personal might than of sanctioned office. Even the most dazzling divinities are still, in some sense, employees of a system that remembers.
+## Archival Abstract
 
-What distinguishes the Jade Court from more temperamental pantheons is not a lack of passion, but a preference for procedure. Disputes become hearings. Favors become appointments. Miracles become “authorized interventions,” with a chain of responsibility that can be traced—at least in theory—back to a directive. The Court’s virtues are obvious: continuity, stability, a capacity to coordinate countless lesser powers without open war. Its vices are the same virtues taken too far: delay disguised as deliberation, mercy smothered by policy, and the quiet cruelty of rules applied perfectly.
+**Classification:** Celestial divine polity (bureaucratic court-form).  
+**Seat:** The Jade Emperor’s Palace, Heaven.  
+**Working description:** A hierarchy of gods, spirits, and appointed immortals whose authority is exercised through mandate, office, ritual, and precedent.
 
-From the outside, mortals tend to imagine Heaven as radiant and effortless. From the inside—if the records I’ve handled are any indication—it is radiant, yes, but also crowded. Edicts circulate. Ledgers accumulate. Promotions and demotions are recorded with the same care as eclipses. And if you want something changed in the world, you may find that what you truly need is not a hero’s strength, but a clerk’s patience and the right signature on the right day.
+- **Attested (High):** The Court presents itself as Heaven’s administrative center and claims jurisdiction over a vast range of celestial and mortal affairs.
+- **Recorded (High):** Petitions pass through named offices, intermediaries, seals, and witnesses. Rank determines who may hear a request and whose authorization can alter the mortal world.
+- **Inference (Medium):** The Court’s continuity depends upon its records. An edict survives the official who issued it because the office, ledger, and precedent remain.
 
-</div>
+> [!archivist-note-left]
+> Mortals picture Heaven as effortless radiance. The surviving records describe radiance surrounded by clerks.
 
-> [!pantheon-aegis|open] Court Dossier
-> **Seat:** Olympus (High Aether)
-> **Mode:** Divine aristocracy
-> **Instruments:** Oaths, patronage, rivalry, prophecy
+## Mandate and Office
+
+The Court treats the cosmos as an administered order. Divine power carries weight, but sanctioned office determines where that power may be used and whose command it answers. Titles confer jurisdiction. Seals authenticate action. Precedent binds current officials to decisions made long before their appointment.
+
+Disputes enter the record as hearings. Favors become appointments or dispensations. Miracles are authorized interventions with a chain of responsibility leading back through the Court. Promotion expands an immortal’s reach; demotion can strip away authority without diminishing the being’s inherent strength.
+
+> [!archivist-note-right]
+> Never confuse rank with power. A minor official carrying the correct seal may command what a greater spirit is forbidden to touch.
+
+## Petition and Intervention
+
+Access to the Court is mediated. A petitioner needs a recognized channel, a properly framed request, and someone within the hierarchy willing to place the matter before the correct office. Missing witnesses, disputed jurisdiction, or an obsolete form can halt a petition before its merits are considered.
+
+This structure allows the Court to coordinate countless lesser powers without constant open conflict. It also permits delay to masquerade as deliberation and policy to overrule mercy. A perfectly applied rule can become its own cruelty when no official accepts responsibility for an exception.
+
+## The Weight of Record
+
+Edicts circulate. Ledgers accumulate. Promotions, censures, celestial appointments, and eclipses are entered with comparable care. Once recorded, a ruling gains force through repetition: later offices cite it, rites encode it, and petitioners shape new claims around it.
+
+Changing the world through the Jade Court therefore requires patience, standing, and the right signature. A hero may defeat a spirit in battle and still fail to overturn the office that sent it.
+
+> [!pantheon-jade|open] Court Dossier
+> **Seat:** The Jade Emperor’s Palace, Heaven  
+> **Mode:** Celestial bureaucracy  
+> **Instruments:** Mandates, offices, seals, ritual, precedent
 > ### Current Court
 > <div class="character-grid">
 >
->> [!abstract] [[Jiutian-Xuannü]]
+>> [!abstract] [[Jiutian-Xuannü|Jiutian Xuannü]]
 >> ![[Jiutian-Xuannü-Portrait.jpeg]]
->> 
+>> **Status:** Active
 >
 > </div>
+
+</div>

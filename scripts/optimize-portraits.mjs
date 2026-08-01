@@ -4,7 +4,13 @@ import process from "node:process";
 import sharp from "sharp";
 
 const ROOT = process.cwd();
-const PORTRAIT_DIR = path.join(ROOT, "content", "Images", "Portraits");
+const PORTRAIT_DIR = path.join(
+  ROOT,
+  "content",
+  "Shared-Assets",
+  "Images",
+  "Portraits",
+);
 const CONTENT_DIR = path.join(ROOT, "content");
 const SOURCE_EXTENSIONS = new Set([".jpg", ".jpeg", ".png"]);
 const DRY_RUN = process.argv.includes("--dry-run");
