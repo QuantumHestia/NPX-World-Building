@@ -6,9 +6,14 @@ import {
   QuartzComponentProps,
 } from "../types";
 import { CodexCollection, collectionForSlug } from "../CodexCollection";
+import { HomePage } from "../HomePage";
 
 const Content: QuartzComponent = (props: QuartzComponentProps) => {
   const { fileData, tree } = props;
+  if (fileData.slug === "index") {
+    return <HomePage {...props} />;
+  }
+
   if (collectionForSlug(fileData.slug)) {
     return <CodexCollection {...props} />;
   }

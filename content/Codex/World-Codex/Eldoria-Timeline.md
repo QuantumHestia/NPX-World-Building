@@ -12,7 +12,7 @@ type: timeline
 ## Era 0 — The Threshold Years
 
 
-### ECR 1 — [[Eldoria/Codex/Myths/The First Song]]
+### ECR 1 — [[Codex/Myths/The First Song|The First Song]]
 Magic is discovered and the first spells are sung. :contentReference[oaicite:2]{index=2}
 
 ### ECR 2 — [[The First Miscast]]

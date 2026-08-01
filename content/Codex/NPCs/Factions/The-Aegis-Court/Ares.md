@@ -9,7 +9,7 @@ tags: ["aegis-court", "deity-dossier", "prophecy", "war"]
 ---
 
 ### I. Domain and Aspects  
-Ares presides over war, defense, and the preservation of thresholds. Unlike the conquest-driven martial deities of other pantheons, Ares’s domain is bound to the principles of **protection over domination** (see [[Unified Theory of the Weave]]). His influence is most keenly felt in **siegecraft, fortification, and the ritualization of conflict resolution**. Temples dedicated to Ares often double as **anchor-points for settlement negotiations** (see [[Compensation]]), though this dual role has led to tensions with the Merchant’s Guild, which views such sites as impediments to trade.  
+Ares presides over war, defense, and the preservation of thresholds. Unlike the conquest-driven martial deities of other pantheons, Ares’s domain is bound to the principles of **protection over domination** (see [[Codex/Systems/The-Magic-System/The-Unified-Theory-of-the-Weave|Unified Theory of the Weave]]). His influence is most keenly felt in **siegecraft, fortification, and the ritualization of conflict resolution**. Temples dedicated to Ares often double as **anchor-points for settlement negotiations** (see [[Codex/Systems/The-Magic-System/The-Unified-Theory-of-the-Weave#1. Compensation|Compensation]]), though this dual role has led to tensions with the Merchant’s Guild, which views such sites as impediments to trade.  
 
 > [!archivist-note-left]  
 > "Ares’s ‘protection’ is a paradox. His temples are both sanctuaries and battlegrounds. I have seen pilgrims kneel at altars while warbands carve their names into the same stone. The Weave tolerates this, but not without cost."  
@@ -17,7 +17,7 @@ Ares presides over war, defense, and the preservation of thresholds. Unlike the 
 ---
 
 ### II. Temples and Factions  
-Temples of Ares are found in **strategic locations**: mountain passes, borderlands, and cities prone to siege (e.g., [[Sarnoît]], where a minor shrine exists beneath the Sarn-Glass forges). These sites are **sanctioned by the Guard** for their role in training sentinels, though the Mages’ Guild disputes their use of **mana-flora** (particularly **Lumin-Vine**) to channel defensive spells.  
+Temples of Ares are found in **strategic locations**: mountain passes, borderlands, and cities prone to siege (e.g., [[Codex/Settings/Kingdoms/The Summer Isles/Cities/Sarnoît|Sarnoît]], where a minor shrine exists beneath the Sarn-Glass forges). These sites are **sanctioned by the Guard** for their role in training sentinels, though the Mages’ Guild disputes their use of **mana-flora** (particularly **Lumin-Vine**) to channel defensive spells.  
 
 The **Aegis Court** itself is a focal point of Ares’s worship in High Aether, though his presence there is **indirect**. Hestia’s influence dominates the court’s rituals, and Ares’s role is often reduced to a **silent guardian**—a status that has led to friction with other war-linked deities (see [[Prophecy: The Sundering of the Aegis]]).  
 
@@ -50,7 +50,7 @@ These prophecies are **Recorded (Medium)**, though their interpretation remains 
 ---
 
 ### V. Status and Legacy  
-Ares remains **active**, though his influence is **diminished** compared to earlier eras. His temples are **well-preserved** but increasingly **underutilized**, with the **Merchant’s Guild** pushing for their repurposing as trade hubs. This has led to **19 contested settlements** (see [[Substitution]]).  
+Ares remains **active**, though his influence is **diminished** compared to earlier eras. His temples are **well-preserved** but increasingly **underutilized**, with the **Merchant’s Guild** pushing for their repurposing as trade hubs. This has led to **19 contested settlements** (see [[Codex/Systems/The-Magic-System/The-Unified-Theory-of-the-Weave#3. Substitution|Substitution]]).  
 
 The **Aegis Court** has not issued a formal statement on Ares’s current role, but internal memos (Recorded, Medium) suggest **increased interest in his ‘war’ aspect** following the **Dawn-weight resonance** events (see [[Bard Bard]]).  
 
@@ -59,9 +59,9 @@ The **Aegis Court** has not issued a formal statement on Ares’s current role, 
 
 --- 
 
-[[Aegis Court]]
+[[Codex/Settings/The-Pantheons/The-Aegis-Court|Aegis Court]]
 [[Hestia]]
 [[Spire of Echoes]]
-[[Unified Theory of the Weave]]  
+[[Codex/Systems/The-Magic-System/The-Unified-Theory-of-the-Weave|Unified Theory of the Weave]]  
 
 ---

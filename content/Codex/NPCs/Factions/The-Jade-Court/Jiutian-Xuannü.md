@@ -9,6 +9,6 @@ author: "High Archivist Rhaelle"
 
 <div class="npc-header">
 
-![[Jiutian-Xuannü-Portrait.webp]]
+![[Shared-Assets/Images/Portraits/Factions/Mythological-Factions/The-Jade-Court/Jiutian-Xuannü-Portrait.jpeg]]
 
 <div class="npc-header-text">

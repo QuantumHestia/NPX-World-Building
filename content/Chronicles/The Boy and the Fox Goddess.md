@@ -103,7 +103,7 @@ His father looked toward the orange light swelling beyond the shutters. “Then 
 
 The knife came down toward the wooden flower at the child’s throat.
 
-White filled the doorway.
+Suddenly, white filled the doorway.
 
 The fox goddess crossed the room without disturbing the circle. Her tails crowded the walls and ceiling, their tips blackened by the smoke outside. She looked at the blade, then at the hand knotted in the boy’s nightshirt.
 
@@ -175,17 +175,17 @@ At dawn, he took the eastern road. He had almost reached the first hill when the
 
 ---
 
-Years later, the wooden chrysanthemum struck the man’s breastplate each time he drew breath.
+Years later, the wooden chrysanthemum swung against the man’s breastplate as he pulled his sword upright.
 
-He stood alone in a broken field, one armored hand braced against the pommel of his sword whilst the blade’s point sank into the mud. Blood had dried between the plates of his gauntlet, some of it his own, and when he dragged the back of his wrist across his mouth, fresh red streaked the steel.
+He stood alone in a broken field, one armored hand braced against the pommel whilst the blade’s point sank deeper into the mud. Blood had dried between the plates of his gauntlet, some of it his own, and fresh red streaked the steel when he dragged the back of his wrist across his mouth.
 
-“I’m sorry, Mother. Father.” He raised his face toward the darkening sky, though smoke had swallowed the first evening stars. “I should have listened to you.”
+Smoke had swallowed the first evening stars. Beneath it, an orange glow pulsed beyond the river where the village roofs had begun to collapse. The smell of scorched oil brought back a kitchen floor beneath his knees and his mother’s fist twisted into the collar of his nightshirt. His hand closed around the wooden flower until its petals pressed through the leather of his glove.
 
-His father had once pushed an untouched cup toward him across an ale-stained table. “Men will call you brave when they want you to stand where they won’t. Listen long enough and you will forget the road home.” The boy had laughed. His father drew the cup back without drinking.
+During his first winter at Dragonkeep, Lord Ascelin had placed a practice sword in his hands and asked whose guilt remained on the blade after a wrongful order. The boy answered that it belonged to the commander. Ascelin’s cane cracked across his knuckles, and the question came again. The cane lowered only when the boy answered, “Mine.”
 
-At the far end of the field, mounted soldiers formed a line beneath a black-and-gold banner. Evening light flashed along their spearheads and helmet slits whilst the horses stamped at the trampled earth, blowing foam against their bits after the long pursuit.
+At the far end of the field, mounted soldiers formed a line beneath a black-and-gold banner. Evening light flashed along their spearheads and helmet slits while the horses stamped at the trampled earth, blowing foam against their bits after the long pursuit.
 
-Behind him, the forest rose in a wall of cedar and thorn. The last of forty villagers had vanished between those first trees, a woman bent beneath a sleeping child whilst two farmers carried the wounded miller ahead of her. Across the river, the bridge burned. Soot streaked every face that had turned toward him when he pointed to the forest.
+Behind him, the forest rose in a wall of cedar and thorn. The last of forty villagers had vanished between those first trees, a woman bent beneath a sleeping child while two farmers carried the wounded miller ahead of her. Across the river, the bridge burned. Soot streaked every face that had turned toward him when he pointed to the forest.
 
 “Run until the bells begin,” he had told them. “Then ask for sanctuary.” Sixteen winters had passed since the bells last answered him. The forest gave no answer now.
 
@@ -199,7 +199,7 @@ The man closed both hands around his sword’s pommel, shifting enough weight on
 
 Smoke stained the horizon behind the soldiers, flattening into a dark band where the river settlement had stood. By morning, the chimneys would be the tallest things left.
 
-“I misunderstood the order,” the man said, and shifted his grip when the sword sank another inch into the softened earth.
+“I guess I misunderstood the order,” the man chuckled, and shifted his grip when the sword sank another inch into the softened earth.
 
 The officer’s gaze moved over the broken shield near his boots, the blood along his side, and the empty field between one wounded man and fifty mounted soldiers. “Do you misunderstand the riders behind me?”
 

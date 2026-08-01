@@ -166,13 +166,13 @@ And we keep the record because—whether you call it history, truth, or dream—
 > <div class="character-grid">
 >
 >> [!abstract] [[High-Archivist-Rhaelle|High Archivist Rhaelle]]
->> ![[Portrait-of-High-Archivist-Rhaelle.jpeg]]
+>> ![[Portrait-of-High-Archivist-Rhaelle.webp]]
 >
 >> [!abstract] [[High-Archivist-Seiwen|High Archivist Seiwen]]
->> ![[High-Archivist-Seiwen-Portrait.jpeg]]
+>> ![[High-Archivist-Seiwen-Portrait.webp]]
 >
 >> [!abstract] [[Raven]]
->> ![[Art/Unused Art/Raven-Portrait.webp]]
+>> ![[Shared-Assets/Images/Portraits/Factions/Archivists/Raven-Portrait.webp]]
 >
 >
 </div>

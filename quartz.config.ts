@@ -64,7 +64,7 @@ colors: {
   plugins: {
     transformers: [
       Plugin.FrontMatter(),
-      MapInjector, // Add your MapInjector here
+      MapInjector(), // Add your MapInjector here
       Plugin.CreatedModifiedDate({
         priority: ["frontmatter", "git", "filesystem"],
       }),

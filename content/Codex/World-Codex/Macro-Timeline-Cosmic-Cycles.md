@@ -1,4 +1,4 @@
-### Year 0 — [[Eldoria/Codex/Myths/The Emergence]]
+### Year 0 — [[Codex/Myths/The Emergence|The Emergence]]
 From the endless, and desolate void, the Blind Idiot God, Azathoth willed itself into existence. 
 
 ### Year 258000 — [[The Sundering War]]
@@ -13,4 +13,3 @@ From the endless, and desolate void, the Blind Idiot God, Azathoth willed itself
 
 ### Year 6192000 — [[The Turn of Races]] (II)
 (C5P1 begins) The emergence crosses the cycle boundary; lineages stabilize into distinct races.
-

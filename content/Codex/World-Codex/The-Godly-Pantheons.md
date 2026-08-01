@@ -22,7 +22,7 @@ title: The Godly Pantheons
 > [!info|open] Covenant & Stewardship
 > <div class="character-grid">
 >
->> [!abstract] [[Settings/The-Pantheons/The-Eden|Eden]]
+>> [!abstract] [[Codex/Settings/The-Pantheons/Eden|Eden]]
 >> ![[Eden-Emblem.png]]
 >>
 >> **Mode:** Covenant / Guardianship

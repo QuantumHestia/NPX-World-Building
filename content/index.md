@@ -17,7 +17,7 @@ tags:
 > [!quote]
 > “History is not written at all. It is screamed into the wind and caught by those who knows how to listen.”
 >
-> — [[Codex/NPCs/Factions/Archivists/High-Archivis-Rhaelle|Archivist Rhaelle]]
+> — [[Codex/NPCs/Factions/Archivists/High-Archivist-Rhaelle|Archivist Rhaelle]]
 
 Eldoria is a world shaped by remembered promises, divine rivalries, ruined empires, dangerous songs, and the people forced to live with what history leaves behind. Magic does not sit apart from that history. Every working makes a claim upon reality, and every lasting claim must find something willing—or unable—to bear it.
 
@@ -58,7 +58,7 @@ For a first reading of Eldoria, follow these records in order:
 
 - [[The-Divine-Ledgers|The Divine Ledgers]] — recorded divine lineages, rite-signatures, and disputed descent.
 - [[Codex/History/The First Song|The First Song]] — historical traditions surrounding music, language, memory, and early magical form.
-- [[Eldoria/Codex/Myths/The Emergence|Mythic Accounts of the Emergence]] — cultural interpretations of the world's first repeatable contradictions.
+- [[Codex/Myths/The Emergence|Mythic Accounts of the Emergence]] — cultural interpretations of the world's first repeatable contradictions.
 - [[Case-Files|Case Files]] — the registry of incidents that turned doctrine into field procedure.
 
 ### Chronicles and Other Stories
@@ -102,7 +102,7 @@ The oldest surviving campaign notes describe **Tira’Ah**, a comparatively youn
 - [[Codex/Settings/world-navigation|World Navigation]]
 - [[Codex/Settings/Regions/The Summer Isles/the-summer-isles|The Summer Isles]]
 - [[Cities|Cities]]
-- [[Sarnoît|Sarnoît]]
+- [[Codex/Settings/Kingdoms/The Summer Isles/Cities/Sarnoît|Sarnoît]]
 
 ### Peoples and Powers
 

@@ -88,11 +88,6 @@ export default (() => {
 
         {/* === YOUR CUSTOM ADDITIONS START HERE === */}
         
-        {/* Leaflet */}
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-        <script src="/static/js/map-init.js"></script>
-        
         {/* Font Awesome */}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
         

@@ -51,8 +51,8 @@ Changing the world through the Jade Court therefore requires patience, standing,
 > ### Current Court
 > <div class="character-grid">
 >
->> [!abstract] [[Jiutian-Xuannü|Jiutian Xuannü]]
->> ![[Jiutian-Xuannü-Portrait.webp]]
+>> [!abstract] [[Codex/NPCs/Factions/The-Jade-Court/Jiutian-Xuannü|Jiutian Xuannü]]
+>> ![[Shared-Assets/Images/Portraits/Factions/Mythological-Factions/The-Jade-Court/Jiutian-Xuannü-Portrait.jpeg]]
 >> **Status:** Active
 >
 > </div>

@@ -1,8 +1,11 @@
 (function() {
   'use strict';
 
+  window.__eldoriaMapController?.destroy();
+
   let mapInstance = null;
   let isInitializing = false;
+  let initTimer = null;
 
   const TILE_SIZE = 256;
   // Tile dirs 0–5 correspond to Leaflet zoom -5..0 (zoomOffset = 5).
@@ -59,15 +62,15 @@
   }
 
   function cleanup() {
+    if (initTimer !== null) {
+      window.clearTimeout(initTimer);
+      initTimer = null;
+    }
+
     if (mapInstance) {
       mapInstance.remove();
       mapInstance = null;
     }
-    document.querySelectorAll('.leaflet-container').forEach(el => {
-      el.classList.remove('leaflet-container', 'leaflet-touch', 'leaflet-fade-anim');
-      el.innerHTML = '';
-      el._leaflet_id = undefined;
-    });
   }
 
   async function initMap() {
@@ -130,10 +133,22 @@
     }
   }
 
-  document.addEventListener('nav', () => {
+  function scheduleInit() {
     cleanup();
-    setTimeout(initMap, 100);
-  });
+    initTimer = window.setTimeout(() => {
+      initTimer = null;
+      initMap();
+    }, 100);
+  }
+
+  document.addEventListener('nav', scheduleInit);
+
+  window.__eldoriaMapController = {
+    destroy() {
+      document.removeEventListener('nav', scheduleInit);
+      cleanup();
+    }
+  };
 
   if (document.readyState === 'complete') {
     initMap();

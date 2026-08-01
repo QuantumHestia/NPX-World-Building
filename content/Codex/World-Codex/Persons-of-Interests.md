@@ -40,7 +40,7 @@ title: Persons of Interest
 > 
 > <div class="character-grid">
 > 
->>[!abstract] [[Captain-Cappy|Captain Cappy]]
+>>[!abstract] [[Captain Cappy]]
 >> ![[Captain-Cappy-Portrait.webp]]
 >> 
 >> **Status:** Second in Command
@@ -51,12 +51,12 @@ title: Persons of Interest
 >>
 >> **Status:** Field Operative
 >
->>[!abstract] [[Isolde-Thorne|Isolde Thorne]]
+>>[!abstract] [[Isolde Thorne]]
 >>![[Isolde-Thorne-Portrait.webp]]
 >>
 >>**Status:** Guild Strategist
 >
->>[!abstract] [[Sylvie-Thorne|Sylvie Thorne]]
+>>[!abstract] [[Sylvie Thorne]]
 >>![[Sylvie-Thorne-Portrait.webp]]
 >>
 >>**Status:** Guild Strategist

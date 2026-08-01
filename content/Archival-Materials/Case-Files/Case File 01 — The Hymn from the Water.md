@@ -15,9 +15,9 @@ tags:
   - hymn
   - drift
 related:
-  - "[[The Summer Isles]]"
+  - "[[Codex/Settings/Regions/The Summer Isles/the-summer-isles|The Summer Isles]]"
   - "[[On Anchors and Drift]]"
-  - "[[The Unified Theory of the Weave]]"
+  - "[[Codex/Systems/The-Magic-System/The-Unified-Theory-of-the-Weave|The Unified Theory of the Weave]]"
 ---
 
 # Case File 01 — The Hymn from the Water
