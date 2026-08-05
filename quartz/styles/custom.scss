@@ -341,6 +341,10 @@ body[data-slug*="the-summer-isles"] .center > article {
 /* =========================
    6. MOBILE SUPPORT
    ========================= */
+.menu-close {
+  display: none !important;
+}
+
 @media (max-width: 850px) {
   #quartz-body {
     display: block !important;
@@ -393,6 +397,7 @@ body[data-slug*="the-summer-isles"] .center > article {
 
   /* Add close button styles */
   .menu-close {
+    display: block !important;
     position: absolute !important;
     top: 1rem !important;
     right: 1rem !important;
