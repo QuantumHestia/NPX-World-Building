@@ -7,8 +7,9 @@
 html {
   scroll-behavior: smooth;
   text-size-adjust: none;
-  overflow-x: hidden;
-  width: 100vw;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
 
   @media all and ($mobile) {
     scroll-padding-top: 4rem;
@@ -17,6 +18,8 @@ html {
 
 body {
   margin: 0;
+  max-width: 100%;
+  overflow-x: clip;
   box-sizing: border-box;
   background-color: var(--light);
   font-family: var(--bodyFont);

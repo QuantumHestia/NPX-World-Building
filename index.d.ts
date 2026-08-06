@@ -3,6 +3,11 @@ declare module "*.scss" {
   export = content
 }
 
+// micromorph 0.4.5 publishes declarations but does not expose them in its package exports.
+declare module "micromorph" {
+  export default function micromorph(from: Node, to: Node): Promise<void>
+}
+
 // dom custom event
 interface CustomEventMap {
   prenav: CustomEvent<{}>

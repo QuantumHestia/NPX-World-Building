@@ -15,9 +15,9 @@ tags:
 # The Archives of Eldoria
 
 > [!quote]
-> “History is not written at all. It is screamed into the wind and caught by those who knows how to listen.”
+> “History is screamed into the wind and caught by those who knows how to listen.”
 >
-> — [[Codex/NPCs/Factions/Archivists/High-Archivist-Rhaelle|Archivist Rhaelle]]
+> — [[High-Archivist-Rhaelle]]
 
 Eldoria is a world shaped by remembered promises, divine rivalries, ruined empires, dangerous songs, and the people forced to live with what history leaves behind. Magic does not sit apart from that history. Every working makes a claim upon reality, and every lasting claim must find something willing—or unable—to bear it.
 

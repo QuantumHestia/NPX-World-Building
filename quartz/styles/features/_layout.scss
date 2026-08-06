@@ -12,9 +12,9 @@ body {
 
 /* FIXED BACKGROUND ART */
 body::before {
-  content: ""; 
-  position: fixed; top: 0; left: 0; 
-  width: 100vw; height: 100vh; 
+  content: "";
+  position: fixed;
+  inset: 0;
   z-index: -1;
   background-image: url("/static/theme/bg.webp") !important;
   background-size: cover !important; 

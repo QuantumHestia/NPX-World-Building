@@ -186,7 +186,11 @@
   }
 }
 
-/* Ensure major sections and standard callouts clear the marginalia floats */
-h2, h3, .callout:not([data-callout^="archivist-note"]) {
+/* Ensure document structure and standard callouts clear the marginalia floats. */
+h2,
+h3,
+h4,
+hr,
+.callout:not([data-callout^="archivist-note"]) {
   clear: both !important;
 }

@@ -1,6 +1,8 @@
 import { FullSlug, resolveRelative } from "../util/path";
 import { QuartzPluginData } from "../plugins/vfile";
 import { QuartzComponent, QuartzComponentProps } from "./types";
+import { htmlToJsx } from "../util/jsx";
+import { Root } from "hast";
 
 type Gateway = {
   eyebrow: string;
@@ -81,11 +83,27 @@ function recordKind(page: QuartzPluginData) {
   return "Archive record";
 }
 
+
+function homepageMarkdown(tree: QuartzComponentProps["tree"]) {
+  const root = tree as Root;
+  const firstSection = root.children.findIndex(
+    (node) => node.type === "element" && node.tagName === "h2",
+  );
+  const splitAt = firstSection < 0 ? root.children.length : firstSection;
+
+  return {
+    introduction: { ...root, children: root.children.slice(0, splitAt) },
+    sections: { ...root, children: root.children.slice(splitAt) },
+  } satisfies Record<string, Root>;
+}
+
 export const HomePage: QuartzComponent = ({
   allFiles,
   fileData,
+  tree,
 }: QuartzComponentProps) => {
   const recent = recentRecords(allFiles);
+  const markdown = homepageMarkdown(tree);
 
   return (
     <main class="homepage-portal" data-homepage-portal>
@@ -106,17 +124,9 @@ export const HomePage: QuartzComponent = ({
         <p class="homepage-kicker">
           The Office of the Archivists welcomes you to
         </p>
-        <h1>The Archives of Eldoria</h1>
-        <blockquote>
-          “History is not written at all. It is screamed into the wind and
-          caught by those who know how to listen.”
-          <cite>— High Archivist Rhaelle</cite>
-        </blockquote>
-        <p class="homepage-summary">
-          A living record of remembered promises, divine rivalries, dangerous
-          songs, ruined empires, and those who inherit what history leaves
-          behind.
-        </p>
+        <div class="homepage-markdown-introduction">
+          {htmlToJsx(fileData.filePath!, markdown.introduction)}
+        </div>
       </section>
 
       <nav class="homepage-gateways" aria-label="Enter the Archives">
@@ -168,6 +178,11 @@ export const HomePage: QuartzComponent = ({
           ))}
         </div>
       </section>
+      {markdown.sections.children.length > 0 && (
+        <section class="homepage-index-content popover-hint">
+          {htmlToJsx(fileData.filePath!, markdown.sections)}
+        </section>
+      )}
 
       <footer class="homepage-closing">
         <span aria-hidden="true">◆</span>
